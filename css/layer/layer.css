@@ -1,0 +1,101 @@
+header {
+width: 100%;
+height: 3.3em;
+line-height: 3.3em;
+background: #005bac;
+}
+
+header .title {
+width: 63%;
+font-size: 1.125em;
+color: #fff;
+text-align: center;
+margin: 0 auto;
+/* 	font-family:"Microsoft YaHei"; */
+}
+.header-arrow-up {
+float: left;
+width: 10%;
+height: 3.3em;
+background: url(../resources/images/btn-back.png) no-repeat;
+background-size: 1em;
+position: absolute;
+left: 5%;
+background-position: left;
+top: 0;
+}
+
+/* header .btn-back{
+	float:left;
+	width:3.3em;
+	height:3.3em;
+	background:url(../images/btn-back.png) no-repeat; 
+	background-size:40%;
+	margin-left:0.2em; 
+	background-position:center ;
+} */
+.floor{
+margin:0;
+margin-top:3.3em;
+}
+.floor a{
+position: relative;
+display: block;
+padding: 10px 10px;
+overflow: hidden;
+}
+.pic_box{
+float: left;
+width: 54px;
+height: 54px;
+-webkit-border-radius: 10px;
+overflow: hidden;
+margin-left:10px;
+}
+.chexian_01{
+background: url(../../images/layer/chexian_01.png) no-repeat center;
+background-size: 100%;
+}
+.chexian_02{
+background: url(../../images/layer/chexian_02.png) no-repeat center;
+background-size: 100%;
+}
+.chexian_03{
+background: url(../../images/layer/chexian_03.png) no-repeat center;
+background-size: 100%;
+}
+.chexian_04{
+background: url(../../images/layer/chexian_04.png) no-repeat center;
+background-size: 100%;
+}
+.chexian_05{
+background: url(../../images/layer/chexian_05.png) no-repeat center;
+background-size: 100%;
+}
+.detail{
+margin-left:80px;
+}
+.title_box{
+width: 100%;
+vertical-align: middle;
+float: left;
+}
+.title_box h3{ font-size:16px;margin-bottom: 0.2em;}
+.name{
+margin-bottom: 8px;
+color: #333;
+}
+.des_box{
+width: 100%;
+vertical-align: middle;
+float: left;
+}
+.desc{
+color: #888;
+line-height: 1.3em;
+margin-top: 3px;
+font-size:12px;
+}
+li{
+border-bottom:0.1em solid #cacaca;
+}

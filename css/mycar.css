@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#f5f5f5;
+}
+
+/*header*/
+header{
+	height: 3.3em;
+	line-height: 3.3em;
+	background: #005bac;
+}
+header .back{
+	float:left;
+	width: 10%;
+	height: 3.3em;
+	background: url(../images/btn-back.png) no-repeat;
+	background-size:1em;
+	position:absolute;
+	left:5%;
+	background-position: left;
+	top:0;
+}
+header .title{
+	width:70%;
+	font-size:1.125em;
+	color:#fff;
+	text-align:center;
+	margin:0 auto;
+}
+.carlist{
+	margin-top:3.3em;
+	/*overflow:hidden;*/
+}
+.car_information{
+	width:100%;
+	height:auto;
+    background:-moz-linear-gradient(top, #fff, #e8e8e8);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#e8e8e8));  
+    background:-o-linear-gradient(top,#fff,#e8e8e8); 
+	background:-moz-linear-gradient(top,#fff,#e8e8e8);
+}
+.information{
+	margin:0 3%;
+	border-bottom:1px solid #d5d5d5;
+}
+.information_title{
+	padding:1em 0;
+	overflow:hidden;
+	border-bottom:1px solid #d5d5d5;
+}
+.car_msg{
+	padding:1em 0 1em 48px;
+}
+.car_msg p{
+	height:28px;
+	line-height:28px;
+	color:#333333;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+.show_items{
+	width:100%;
+	padding:.8em 0 .7em;
+	overflow:hidden;
+	border-bottom: 0.1em solid #cacaca;
+}
+.show_items_icon{	
+	float: left;
+	width: 33px;
+	height: 32px;
+	margin-left: 0.5em;
+}
+
+.info_text {
+    color: #333;
+    float: left;
+    font-size: 1.1em;
+    line-height: 32px;
+    padding-left: 0.5em;
+    width: 70%;
+	font-weight:bold;
+}
+.add_text{
+	color: #333;
+    float: left;
+    font-size: 1.1em;
+    line-height: 32px;
+    padding-left: 0.5em;
+    width: 70%;
+}
+.active-close{
+	float:right;
+	width: 33px;
+	height: 32px;
+	background: url(../images/icon/active-close.png) no-repeat center center;
+	background-size: 100%;
+	display: inline-block;
+}
+.icon_car{
+	background: url(../images/icon/cpic-car.png) no-repeat;
+	background-position:left bottom;
+	background-size: 100%;
+}
+.icon_add{
+	background: url(../images/add-car.png) no-repeat;
+	background-position:left bottom;
+	background-size: 100%;
+}
+.add_car{
+	background:#fff;
+}
+.add_car_in{
+	margin:0 3%;
+	padding:1em 0;
+	overflow:hidden;
+}

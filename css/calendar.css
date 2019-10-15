@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+
+ul{
+	list-style:none;padding:0;
+}
+
+.clear{
+	clear:both;
+}
+.month-container{
+	background:#ffe6aa;
+	width:22.094em;
+	height:auto;
+	margin:30px auto ;
+}
+
+.month-head{
+	background:#ffe6aa;
+	width:100%;
+	height:30px;
+    font:1.2em "microsoft yahei";
+	text-shadow:1px 1px 1px #999;
+	text-align:center;
+}
+
+.month-head span {
+    color: #F60;
+    border-color: #fffbdf;
+	line-height:50px;
+}
+
+
+.month-cell {
+    float: left;
+	width:3em;
+	height:3em;
+	background:#F5F5F5;
+	border:1px solid #FEFEFE;
+}
+
+/*.month-container{
+	background:#fffbdf;
+	width:504px;
+	height:auto;
+	margin:30px auto 0;
+	box-shadow:2px 2px 8px 1px rgba(0,0,0,0.6);
+}
+
+.month-head{
+	background:#fffbdf;
+	width:504px;
+	height:50px;
+    font:30px "microsoft yahei";
+	text-shadow:2px 2px 3px #FFF;
+	text-align:center;
+}
+
+.month-head span {
+    color: #ffb186;
+    border-color: #fffbdf;
+	line-height:50px;
+}
+
+
+.month-cell {
+    float: left;
+	width:70px;
+	height:70px;
+	background:#F5F5F5;
+	border:1px solid #FEFEFE;
+}*/
+
+.month-cell:active{
+	box-shadow:inset 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.month-cell span {
+    display: block;
+    color: #cccccc;
+    font:1.2em "microsoft yahei";
+    text-align: center;
+	line-height:2.4em;
+    cursor:pointer;
+}
+
+.month-cell.active span {
+    border-color: #cccccc;
+}
+
+.month-cell.pink {
+    background: #fffbdf;
+}
+
+.month-cell.pink span {
+    color: #ffb186;
+    border-color: #fffbdf;
+}
+
+.month-cell.pink.active span {
+    border-color: #ffe295;
+}
+
+.month-cell.orange {
+    background: #fff5b4;
+}
+
+.month-cell.orange span {
+    color: #ffaf6e;
+    border-color: #fff5b4;
+}
+
+.month-cell.orange.active span {
+    border-color: #ffcf71;
+}
+
+.month-cell.red {
+    background: #ff6840;
+}
+
+.month-cell.red span {
+    color: #ffffff;
+    border-color: #ff6840;
+}
+
+
+.month-cell.blue {
+    background: #5bb5ec;
+}
+
+.month-cell.blue span {
+    color: #ffffff;
+    border-color: #5bb5ec;
+}
+
+
+.flipContainer{
+	width:300px;
+	height:100px;
+	background:#FFF;
+	padding:10px;
+}
+
+.flip{
+	background:url(../images/filmstrip.png);
+	float:left;
+	width:53px;
+	height:103px;
+}

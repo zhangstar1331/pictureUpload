@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**GPRS定位**/
+.gprs-rest { border-radius:0.3em; background:#009ddc; display:inline-block;width:6em;height:1.5em;padding:0.5em;text-align:right;}
+.gprs-rest-a:link,.gprs-rest-a:active,.gprs-rest-a:visited,.gprs-rest-a:hover {width:6em;height:1.5em;  font-size:1em; color:#fff;background:url(../images/btn-gprs.png) no-repeat; background-size:25%; display:inline-block;text-decoration:none;line-height:1.5em;}
+.flagbox {height:3em;padding:0 1em;}
+.icon-flag {background:url(../images/icon/icon-flag.png) no-repeat;width:2em;height:3em; background-size:100%; display:inline-block; text-align:center;}
+.btn-hotnumber {height:5em;margin:1em;background:#009ddc; border-radius:0.5em;line-height:5em; border-bottom:0.2em solid #005bac;}
+.number-name {width:82%;text-align:center;float:left;}
+
+/**一键报案**/
+.bg-f3{ background:#f3f3f3;}
+.bg-f{ background:#ffffff;}
+.box-selected {height:2.9em;  border:0.15em #009ddc solid; line-height:3em; text-align:center;background:url(../images/right-corn.png) no-repeat; background-position:right 1.4em; background-size:12%;}
+
+.box-unselected {height:3em;   line-height:3em; text-align:center;}
+
+.div-service {height:3em;border-bottom:0.1em solid #aaa;} 
+/* font */
+.font083em{ font-size:0.83em;font-family:"Microsoft YaHei";color:#666666;}
+.font13em{ font-size:1.33em;font-family:"Microsoft YaHei";color:#666666;}
+.no-spacing{ letter-spacing:normal;}
+
+/* margin/padding */
+.mr1em{ margin-right:1em;}
+.mt125em{ margin-top:1.25em;}
+
+.p05em{ padding:0.5em;}
+.p05em2em{ padding:0 1em 1em 1em ;}
+.p025em0em{ padding:0.25em 0em;}
+.p3em0em{ padding:3em 0em;}
+.pl2em{ padding-left:2em;}
+
+/* line-height */
+.lh18em{ line-height:1.8em;}
+
+/* border */
+.bt-bb-01em{ border-top:0.1em solid #cacaca; border-bottom:0.1em solid #cacaca;}
+
+/* 新风格 */
+.text-area-yjba{ height:auto; padding:0.7em; border-top:0.1em solid #999;}
+.call95500,.call110,.call120{ width:6em; height:6em; border-radius:4em; display:inline-block; }
+.call95500{ border:0.2em solid #009ddc; color:#009ddc;}
+.call110{ border:0.2em solid #ff9000; color:#ff9000;}
+.call120{ border:0.2em solid #f37a70; color:#f37a70;}
+.call-number-95500{ text-align:center; font-size:1.5em;}
+.call-number{ text-align:center; font-size:1.6em; font-weight:bold; margin-top:0.9em;}
+.call-name{ text-align:center; font-size:1em;}
+

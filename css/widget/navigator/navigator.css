@@ -1,0 +1,44 @@
+.ui-navigator-list,
+.ui-navigator-list li {
+    list-style: none;margin:0;padding:0;
+}
+.ui-navigator-list li {
+    display: inline-block;
+    white-space:nowrap;/*内容不换行*/
+}
+
+        .left-fixed {
+            display: -webkit-box; 
+			display: -moz-box;
+			display:box;
+			margin-top:80px;
+        }
+        .left-fixed>div {
+			display: -moz-box;
+			display:box;
+            -webkit-box-flex: 1;
+			-moz-box-flex: 1;
+			box-flex: 1;        }
+        .left-fixed>div.left {
+            width: 100px;
+            -webkit-box-flex: 0;
+			-moz-box-flex: 0;
+			box-flex: 0;
+            border-top: 1px solid #2468c9;
+            border-bottom: 1px solid #0145a5;
+            background: #2773dc;
+            line-height: 34px;
+        }
+        .left-fixed>div.left a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+			padding:0 5px;
+        }
+        .left-fixed>div.left a.ui-state-active {
+            background: #0c4da8;
+        }
+
+    

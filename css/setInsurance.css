@@ -1,0 +1,67 @@
+ .title {
+    color: #333;
+    font-size: 1em;
+    border-bottom: 1px solid #f7f7f7;
+}
+ .title .span-right {
+    float: left;
+    color: #999999;
+    font-size: 1em;
+    margin-right: 4%;
+    position: relative;
+     left: 7.8%;
+
+}
+.select-yes {
+    background: url(../../../images/select-yes.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 1.2em;
+    position: absolute;
+    left: -1.5em;
+}
+ /*.clearfix:before, .clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0;}*/
+ /*.clearfix:after{ clear: both;}*/
+ .select-no {
+     background: url(../../../images/select-no.png) no-repeat;
+     width: 30px;
+     height: 30px;
+     background-size: 1.2em;
+     position: absolute;
+     left: -1.5em;
+ }
+ .item-ul-box ul li{
+     background: none;
+ }
+ .baoxianqiehuan li{
+     box-sizing: border-box;
+ }
+.active-color{
+    border-bottom-color: rgb(215,0,15) !important;
+
+}
+ .active-color span{
+     color: rgb(215,0,15) !important;
+ }
+ #typeNameList li,#AllTaoCan li{
+     padding: 0.5em 0 0.5em !important;
+ }
+ .inputStyle{
+     height: 30px;
+     line-height: 30px;
+     font-size:.8em;
+     border: none;
+     text-align: right;
+     color: #333;
+     font-family: "microsoft yahei";
+     white-space: nowrap;
+     -webkit-text-overflow: ellipsis;
+     -webkit-white-space: nowrap;
+     overflow: hidden;
+     outline-color: transparent;
+     position: relative;
+     top:5px;
+ }
+ #tcDiv li{
+     border-bottom: none;
+ }

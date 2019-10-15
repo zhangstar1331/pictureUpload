@@ -1,0 +1,2969 @@
+﻿body, html, div, a, span, button, input, select, textarea {
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+.f_left {
+	float: left;
+	display: inline;
+}
+
+.f_right {
+	float: right;
+	display: inline;
+}
+
+.t_left {
+	text-align: left;
+}
+
+.t_right {
+	text-align: right
+}
+
+.t_center {
+	text-align: center
+}
+
+/* icon顶部返回主页 */
+.ui_btn-home {
+	width: 2.0em;
+	padding-right: 1.3em;
+	height: 2.9em;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.icon-btn_home {
+	background: url(../../resources/images/icon/btn_home.png) no-repeat
+		center;
+	background-size: 45%;
+}
+
+/* icon */
+.icon_arrow-down {
+	background: url(../images/icon/icon_arrow-down.png) no-repeat center;
+	background-size: 100%;
+}
+
+.icon_arrow {
+	width: 1em;
+	height: 2.5em;
+	margin-right: 0.2em;
+}
+
+.icon_date_clander {
+	background: url(../images/icon/icon-clander.png) no-repeat center;
+	background-size: 100%;
+}
+
+.icon_clander {
+	width: 1.3em;
+	height: 2.5em;
+	margin-right: 0.2em;
+}
+
+.icon_txt-serach {
+	background: url(../images/btn-serach.png) no-repeat center;
+	background-size: 100%;
+}
+
+.icon-list-details {
+	width: 1.6em;
+	height: 1.6em;
+	display: inline-block;
+	background: url(../images/icon/icon-list-details.png) no-repeat center;
+	background-size: 100%;
+	text-align: right;
+}
+
+.icon-list-details-sec {
+	width: 1.6em;
+	height: 1.6em;
+	display: inline-block;
+	background: url(../images/icon/icon-list-details-sec.png) no-repeat
+		center;
+	background-size: 100%;
+	text-align: right;
+}
+
+.icon_photo {
+	background: url(../images/icon/icon-photo.png) no-repeat center;
+	background-size: 100%;
+}
+
+.icon-more-left {
+	background: #009ddc url(../images/icon/ui-slider-arrow.png) no-repeat
+		0.4em 0.7em;
+	background-size: 200%;
+}
+
+.icon-more-right {
+	background: #009ddc url(../images/icon/ui-slider-arrow.png) no-repeat
+		-1.4em 0.7em;
+	background-size: 200%;
+}
+
+.icon-more-up {
+	background: url(../../resources/images/icon-ill-up.png) no-repeat center
+		bottom;
+	background-size: 100%;
+}
+
+.icon-more-down {
+	background: url(../../resources/images/icon-ill-down.png) no-repeat
+		center bottom;
+	background-size: 100%;
+}
+
+.icon_btn_wzlp {
+	width: 3.5em;
+	height: 2.5em;
+	position: fixed;
+	top: 9em;
+	right: 0;
+	z-index: 99;
+	background: url(../../resources/images/icon/icon-btn-wzlp.png) no-repeat
+		right center;
+	background-size: 100%;
+}
+
+/* 字体样式 */
+.font14-blue-bold {
+	font-size: 0.875em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+	font-weight: bold;
+}
+
+.font12-blue {
+	font-size: 0.875em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+}
+
+.font12px {
+	font-size: 0.6em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+.font14px_gray {
+	font-size: 0.875em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+.font14px_blue {
+	font-size: 0.875em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+}
+
+.font14px_org {
+	font-size: 0.875em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #ff9000;
+	font-weight: 500;
+}
+
+.font16px {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.font16px_blue {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: bold;
+}
+
+.font16-blue {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+}
+
+.font16_blue_bold {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+	font-weight: bold;
+}
+
+.font16_org {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #ff9000;
+}
+
+.font16px_org {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #ff9000;
+	font-weight: 500;
+}
+
+.font16px_bold_000 {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+
+.font16px_000 {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+.font18px {
+	font-size: 1.123em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+.font18_bold {
+	font-size: 1.123em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: bold;
+}
+
+.font24px_org {
+	font-size: 1.5em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #ff9000;
+	font-weight: 500;
+}
+
+.font16_3 {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+.font16_3bold {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: bold;
+}
+
+.font785-blue {
+	font-size: 0.785em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #009ddc;
+}
+/* 基础文字段落 */
+.div_p {
+	background: #fff;
+	border-top: 0.1em solid #aaa;
+	padding: 0 0.7em 0.1em 0.7em;
+}
+
+.div_p p {
+	line-height: 1em;
+	color: #666666;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+.div_p2 {
+	background: #f3f3f3;
+	border-top: 0.1em solid #aaa;
+	padding: 0 0.7em 0.1em 0.7em;
+}
+
+.div_p2 p {
+	line-height: 1.5em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 1em;
+}
+
+.div_p_blue {
+	padding-top: 0.5em;
+}
+
+.div_p, .div_p2 div {
+	line-height: 2em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 1em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+.div_line_yellow {
+	background: #f3f3f3;
+	border-top: 0.1em dashed #aaa;
+	padding: 0.4em 0.7em 0.4em 0.7em;
+}
+
+.div_line_yellow table tr td {
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #ff9000;
+	line-height: 2em;
+}
+
+/* 标题 */
+.tit_text_title {
+	height: 2.4em;
+	line-height: 2.4em;
+	padding: 0 0.7em;
+	border-top: 0.1em solid #aaa;
+	background: #fff;
+}
+
+.div_bar_date {
+	background: #fff;
+	height: 5em;
+	padding-left: 0.7em;
+	border-top: 0.1em solid #aaa;
+}
+
+.div_bar_date div {
+	line-height: 2.3em;
+}
+
+.clander_box {
+	width: auto;
+	border: 0.1em solid #999999;
+	border-radius: 0.4em;
+	background: #fff;
+	padding: 0.3em 0.2em;
+}
+
+.clander_box_2 {
+	width: auto;
+	border: 0.1em solid #999999;
+	border-radius: 0.4em;
+	background: #ddd;
+	padding: 0.3em 0.2em;
+}
+
+.input_clander_box {
+	border: 0;
+	background: none;
+	width: 8em;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-modify: read-write-plaintext-only;
+	outline: none;
+}
+
+/* 输入项 */
+.text-area_div {
+	height: auto;
+	padding: 1em 0.7em 0em 0.7em;
+	background: #fff;
+}
+
+.text_input {
+	height: auto;
+	padding: 1em 0.7em;
+	background: #fff;
+	border-top: 0.1em solid #aaa;
+}
+
+.div_text_box {
+	height: 2.5em;
+	line-height: 2.5em;
+	border-radius: 0.3em;
+	border: 0.1em #999 solid;
+	margin-bottom: 0.7em;
+	background: #fff;
+}
+
+.text_span_title {
+	margin-left: 0.3em;
+	text-align: left;
+	color: #999;
+}
+
+.input_text {
+	width: 7.6em;
+	text-align: right;
+	border: none;
+	height: 1.5em;
+	margin-right: 0.3em;
+	color: #666;
+	outline: none;
+	margin-top: 0.4em;
+}
+
+.input_text::-webkit-input-placeholder {
+	color: #666;
+}
+
+.input_text::-moz-placeholder {
+	color: #666;
+}
+
+/* 表单 */
+.insurance-list_table {
+	background: #fff;
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	color: #666;
+}
+
+.insurance-list_table tr th {
+	text-align: right;
+	border-top: 0.1em solid #aaa;
+	padding: 0.3em;
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: bold;
+	border-bottom: 0.1em solid #999;
+	line-height: 1.5em;
+}
+
+.insurance-list_table tr td {
+	border-top: 0.1em solid #aaa;
+	padding: 0.3em 0em 0.3em 0.3em;
+	line-height: 1.5em;
+}
+
+/* 内外间距 */
+.p02em {
+	padding: 0.2em;
+}
+
+/* 非事故道路救援 */
+.div_p2 .m05em15em {
+	margin: 0.5em 1.5em;
+	padding: 0em;
+	height: 2.5em;
+	border: 0.1em solid #009ddc;
+	border-radius: 0.3em;
+}
+
+.mb0em {
+	margin-bottom: 0em;
+}
+
+.mb03em {
+	margin-bottom: 0.3em;
+}
+
+.plr07em {
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+}
+
+.insurance-list_table tr .pl07em {
+	padding-left: 0.7em;
+}
+
+.insurance-list_table tr .pr07em {
+	padding-right: 0.7em;
+}
+
+.rescue-tabBtn {
+	width: 50%;
+	height: 2.5em;
+	line-height: 2.5em;
+	text-align: center;
+	color: #009ddc;
+	font-size: 1em;
+	display: inline-block;
+}
+
+.rescue-tabBtnSec {
+	color: #fff;
+	background: #009ddc;
+}
+
+.rescue-tabBtn:hover, .rescue-tabBtn:visited {
+	color: #009ddc;
+}
+
+.rescue-tabBtnSec:hover, .rescue-tabBtnSec:visited {
+	color: #fff;
+}
+
+.rescue-mainList {
+	width: 100%;
+}
+
+.rescue-mainList a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: url(../images/btn-arrow-list.png) no-repeat center center;
+	background-size: 80%;
+}
+
+.div_p .rescue-mainList div {
+	line-height: 1.8em;
+}
+
+.grade-circle, .grade-sec {
+	width: 0.6em;
+	height: 0.6em;
+	border: 0.15em solid #009ddc;
+	border-radius: 0.6em;
+	display: inline-block;
+}
+
+.grade-sec {
+	background: #009ddc;
+}
+
+.evaluate-input {
+	width: 72%;
+	height: 1.5em;
+	border: 0.1em solid #aaa;
+	border-radius: 0.3em;
+	outline: none;
+}
+
+.evaluate-textarea {
+	width: 98%;
+	height: 3.5em;
+	border: 0.1em solid #aaa;
+	border-radius: 0.3em;
+	outline: none;
+	margin: 0.5em 0;
+}
+
+.bottom-btn3 {
+	display: block;
+	float: left;
+	width: 32%;
+}
+
+/* 分隔条 */
+.spearte {
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.spearte_bg {
+	height: auto;
+	padding: 0.2em;
+	border-top: 0.1em solid #aaa;
+	background: #f3f3f3;
+}
+
+/* 车型搜索图标 */
+.btn_search_car {
+	width: 14%;
+}
+
+.btn_search_car a {
+	display: inline-block;
+	height: 2.4em;
+	width: 100%;
+	background: url(../images/btn-serach.png) no-repeat center;
+	background-size: 70%;
+	margin-left: 0.3em;
+}
+
+/* 车型搜索结果展示 */
+.text_bg_f3 {
+	background: #f3f3f3;
+	height: auto;
+}
+
+.text_bg_7bbdf5 {
+	background: #7bbdf5;
+	color: #fff;
+}
+
+.text_top {
+	border-top: 0.1em solid #aaa;
+	background: #fff;
+}
+
+.text_list {
+	height: 1.5em;
+	line-height: 1.5em;
+	padding: 0 0.7em 0 0.7em;
+}
+
+.margin_div {
+	padding: 0 0.7em 0 0.7em;
+}
+
+.div_text_box_2 {
+	height: 2.3em;
+	line-height: 2.3em;
+	border-radius: 0.3em;
+	border: 0.1em #999 solid;
+	margin-bottom: 0.5em;
+	background: #fff;
+}
+
+.input_text_2 {
+	width: 8em;
+	text-align: right;
+	border: none;
+	height: 2.1em;
+	margin-right: 0.3em;
+	color: #666;
+	outline: none;
+}
+
+.input_text_2::-webkit-input-placeholder {
+	color: #666;
+}
+
+.input_text_2::-moz-placeholder {
+	color: #666;
+}
+
+.icon_sm {
+	width: 1.4em;
+	height: 1.1em;
+	display: inline-block;
+	margin-left: 0.2em;
+}
+
+/* 投保方案 */
+.car-mess {
+	position: relative;
+}
+/* 旧更多信息
+.car-mess-more{ width:100%; position:absolute; right:0em; top:0.5em; z-index:90; float:right;}
+.car-mess-more-icon{ width:1.2em; height:2.4em; border-radius:1.2em 0em 0em 1.2em; margin-top:1em; float:right;}
+.car-mess-more-con{ line-height:1.5em; padding:0.5em; background:#fff; border:0.1em solid #009ddc; box-shadow:-3px 3px 5px #CCCCCC; float:right;}
+.car-mess-more-con p{ padding:0; margin:0;}
+ */
+.mess-text {
+	padding: 0 0.7em 0 0.7em;
+}
+
+.mess-text p {
+	padding: 0;
+	margin: 0;
+}
+
+.car-mess-more {
+	width: 100%;
+	text-align: center;
+}
+
+.car-mess-more-icon {
+	width: 6em;
+	height: 1.5em;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.footer_float3 {
+	bottom: 2.90em;
+}
+
+.footer_premium {
+	position: fixed;
+	z-index: 99;
+	left: 0em;
+	bottom: 2.85em;
+}
+
+.premium_2 {
+	height: 6.6em;
+	background: #fdf4da;
+	text-align: left;
+}
+
+/* 签名 */
+.qianming {
+	height: 4em;
+	padding: 0.5em 0.7em;
+	background: #fff;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	border-top: 0.1em solid #aaa;
+}
+
+.siger {
+	text-align: right;
+}
+
+.siger span {
+	display: inline-block;
+	color: #333;
+}
+
+.siger-input {
+	width: 5em;
+	height: 1em;
+	border-bottom: 1px solid #333;
+	cursor: pointer;
+}
+
+.yqr, .wqr {
+	width: 4em;
+	line-height: 1.4em;
+	text-align: center;
+	border: 0.1em solid #009ddc;
+	border-radius: 1em;
+	display: inline-block;
+	margin-top: 0.25em;
+	float: right;
+}
+
+.yqr {
+	color: #fff;
+	background: #009ddc;
+}
+
+.wqr {
+	color: #009ddc;
+	background: #fff;
+}
+
+/* 支付 */
+.btn_on, .btn_off {
+	width: 3.5em;
+	line-height: 1.4em;
+	border-radius: 1em;
+	display: inline-block;
+	margin-top: 0.25em;
+	float: right;
+}
+
+.btn_on {
+	text-indent: 0.55em;
+	color: #fff;
+	background: #009ddc;
+	border: 0.1em solid #009ddc;
+}
+
+.btn_off {
+	text-indent: 0.3em;
+	color: #999;
+	background: #fff;
+	border: 0.1em solid #ddd;
+}
+
+.btn_on_round, .btn_off_round {
+	width: 1.3em;
+	height: 1.3em;
+	background: #fff;
+	border-radius: 0.65em;
+	display: inline-block;
+	margin-top: 0.025em;
+}
+
+.btn_on_round {
+	margin-right: 0.025em;
+	box-shadow: -1px 1px 3px #CCCCCC;
+	float: right;
+}
+
+.btn_off_round {
+	margin-left: 0.025em;
+	box-shadow: 1px 1px 3px #CCCCCC;
+	float: left;
+}
+
+/*2015-04-23违章查询*/
+.ill-tit {
+	color: #666;
+	height: 3.4em;
+	line-height: 3.4em;
+	padding: 0 1em;
+}
+
+.col-f90 {
+	color: #ff9000;
+	padding: 0 0.3em;
+}
+
+.ill-box {
+	background: #fff;
+	padding: 2em 0;
+	border-bottom: 1px solid #999;
+}
+
+.icon-ill-down {
+	height: 1.2em;
+	margin-left: 34%;
+	width: 6em;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	background: url(../../resources/images/icon-ill-down.png) no-repeat
+		center;
+	background-size: 100%;
+}
+
+.icon-ill-up {
+	height: 1.2em;
+	margin-left: 34%;
+	width: 6em;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	background: url(../../resources/images/icon-ill-up.png) no-repeat center;
+	background-size: 100%;
+}
+
+/*2015-04-23服务评价*/
+.clear {
+	clear: both;
+}
+
+.colf90 {
+	color: #ff9900;
+}
+
+.div-pj {
+	color: #666;
+	font-size: 1em;
+	border-top: 1px solid #999;
+	line-height: 2.8em;
+	padding: 1.2em 1em 0.1em;
+}
+
+.div-pj span {
+	float: left;
+}
+
+.eval-tit {
+	color: #666;
+	background: #f3f3f3;
+	line-height: 1.8em;
+	padding: 1.1em 1em;
+}
+
+.eval-tit dt {
+	text-indent: 1.9em;
+}
+
+.icon-star {
+	cursor: pointer;
+	margin-left: 0.6em;
+	background: url(../../resources/images/icon-pjstar.png) no-repeat center;
+	background-size: 100%;
+	height: 2.8em;
+	width: 1.6em;
+	display: block;
+	float: left;
+}
+
+.icon-star-no {
+	cursor: pointer;
+	margin-left: 0.6em;
+	background: url(../../resources/images/icon-pjstar-no.png) no-repeat
+		center;
+	background-size: 100%;
+	height: 2.8em;
+	width: 1.6em;
+	display: block;
+	float: left;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+	vertical-align: top;
+}
+
+.ssyy {
+	line-height: 1.5em;
+	padding: 0.3em 0;
+	text-indent: 0.5em;
+	margin: 1.4em 0 3.5em;
+	border: 1px solid #999;
+	border-radius: 1px;
+	min-height: 11.7em;
+	outline: medium none;
+	width: 98%;
+}
+
+.eva-mail i {
+	font-style: normal;
+	float: right
+}
+
+/* 2015-04-24投诉页面*/
+.col-blue {
+	color: #009ddc;
+	padding: 0 0.3em;
+}
+
+.div_textarea_box {
+	background: none repeat scroll 0 0 #fff;
+	border: 0.1em solid #999;
+	border-radius: 0.3em;
+	height: 8.5em;
+	line-height: 2.5em;
+	margin-bottom: 0.7em;
+}
+
+.text-k {
+	width: 100%;
+}
+
+.div_textarea_box .text {
+	width: 96%;
+	border-radius: 0.3em;
+	padding-left: 0.3em;
+	background: none repeat scroll 0 0 #fff;
+	border: none;
+	height: 5.5em;
+	line-height: 1.5em;
+	float: left;
+	overflow: auto;
+}
+
+/* 车险服务 */
+.icon_a_ul {
+	
+}
+
+.icon_a_ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	border-top: 0.1em solid #999;
+	border-right: 0.1em solid #999;
+	background: #fff;
+}
+
+.icon_a_ul li img {
+	height: 1.5em;
+	margin-top: 1em;
+}
+
+.icon_a_ul li div {
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #666666;
+	padding: 0.8em 0 0.8em 0;
+}
+
+/* 网点查询 行车助手 */
+.wd_city_search {
+	width: 100%;
+	position: fixed;
+	top: 2.85em;
+	left: 0;
+}
+
+.wd_input_text {
+	width: 92%;
+	text-align: center;
+	border: none;
+	height: 2.4em;
+	color: #666;
+	outline: none;
+}
+
+.wd_list {
+	background: #fff;
+	border-top: 0.1em solid #999;
+	padding: 0.7em 0.5em;
+}
+
+.wd_img_bg {
+	width: 4.75em;
+	height: 3.8em;
+	background: #f3f3f3 url(../images/icon/wd_img_bg.png) no-repeat center;
+	background-size: 40%;
+	margin-right: 0.5em;
+}
+
+.w72 {
+	width: 72%;
+}
+
+.wd_lx_list {
+	width: 100%;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.wd_lx_list td {
+	font-size: 1em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	color: #666;
+	line-height: 1.5em;
+	padding: 0.4em 0em;
+	border-top: 0.1em solid #aaa;
+}
+
+.wd_lx_list_icon1 {
+	background: url(../images/icon/icon_wd_dz.png) no-repeat left center;
+	background-size: 80%;
+	width: 1em;
+	height: 1.5em;
+	margin: 0 0.4em 0 0.6em;
+}
+
+.wd_lx_list_icon2 {
+	background: url(../images/icon/icon_wd_dh.png) no-repeat left center;
+	background-size: 100%;
+	width: 1em;
+	height: 1.5em;
+	margin: 0 0.4em 0 0.6em;
+}
+
+.wd_lx_list .wd_lx_list_arrow {
+	background: url(../images/btn-arrow-right-gray.png) no-repeat center;
+	background-size: 30%;
+}
+
+.wd_load {
+	width: 7em;
+	margin: 0 auto;
+	padding: 0.4em 0;
+}
+
+.wd_load_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+}
+
+.wd_load_icon_up {
+	background: url(../images/icon/icon_load_up.png) no-repeat center;
+	background-size: 50%;
+}
+
+.wd_load_icon_down {
+	background: url(../images/icon/icon_load_down.png) no-repeat center;
+	background-size: 50%;
+}
+
+.wd_load_icon_car {
+	width: 2em;
+	height: 1.5em;
+	margin-right: 0.5em;
+	background: url(../images/icon/icon_load_car.png) no-repeat center;
+	background-size: 100%;
+}
+
+.wd_load_text {
+	color: #999;
+	line-height: 1.5em;
+}
+
+.wd_location {
+	width: 100%;
+	position: fixed;
+	top: 2.85em;
+	left: 0;
+	background: #fff;
+	border-bottom: 0.1em solid #aaa;
+}
+
+.wd_location_icon {
+	width: 12%;
+}
+
+.wd_location_icon1 {
+	background: url(../images/icon/icon_wd_dz.png) no-repeat center;
+	background-size: 85%;
+	width: 0.9em;
+	height: 1.35em;
+	margin: 0.6em auto 0em auto;
+}
+
+.wd_location_icon2 {
+	width: 0.3em;
+	height: 0.3em;
+	background: #ccc;
+	border-radius: 0.15em;
+	margin: 0.2em auto;
+}
+
+.wd_location_icon3 {
+	width: 0.4em;
+	height: 0.4em;
+	border: 0.15em solid #ccc;
+	border-radius: 0.5em;
+	margin: 0.2em auto;
+}
+
+.wd_location_search {
+	width: 75%;
+}
+
+.wd_location_my {
+	height: 2.5;
+	line-height: 2.5em;
+}
+
+.xc_input_text {
+	border: none;
+	height: 2.4em;
+	color: #666;
+	outline: none;
+}
+
+.wd_location_destination {
+	height: 2.5;
+	line-height: 2.5em;
+	border-top: 0.1em solid #aaa;
+	color: #999;
+}
+
+.wd_location_change {
+	width: 12%;
+}
+
+.wd_location_change_icon {
+	width: 0.8em;
+	height: 1.28em;
+	background: url(../images/icon/icon_wd_wzdh.png) no-repeat center;
+	background-size: 100%;
+	margin-top: 1.9em;
+	margin-left: 0.7em;
+}
+
+.ui_a-xq {
+	width: 2.0em;
+	padding-right: 1em;
+	height: 2.9em;
+	line-height: 2.9em;
+	color: #fff;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.address_input_text {
+	width: 97%;
+	margin: 0.3em 0 0 0.3em;
+	text-align: left;
+	border: none;
+	height: 1.8em;
+	color: #666;
+	outline: none;
+}
+
+.address_dw {
+	padding: 0 0.7em 0.5em 0;
+	background: #fff;
+	color: #666;
+}
+
+/*微信-查询品牌型号20150710*/
+.font_left {
+	text-align: left;
+	text-indent: 0.3em;
+}
+
+.wid90 {
+	width: 90%;
+}
+
+.progress-box-fr {
+	width: 25%;
+	height: 3em;
+	float: left;
+}
+
+.icon_btn {
+	height: 2.4em;
+	width: 2.4em;
+}
+
+.icon_btn_yesSelect {
+	background: url("../images/yes_select.png") no-repeat scroll center
+		center/60% auto;
+}
+
+.icon_btn_noSelect {
+	background: url("../images/no_select.png") no-repeat scroll center
+		center/60% auto;
+}
+
+.w83 {
+	width: 83%;
+}
+
+.mt02 {
+	margin-bottom: 0.2em;
+}
+
+.content7 {
+	width: 100%;
+	margin-top: 12.6em;
+	margin-bottom: 2.85em;
+}
+
+/*  保险条款20150710*/
+#bxpop_menu {
+	margin: 5em 4% 0;
+	width: 92%;
+	height: 70%;
+	border: 1px solid #999;
+	background: #fff;
+	position: absolute;
+	z-index: 1000;
+}
+
+#bxpop_menu #bxpop_nav {
+	line-height: 2.5em;
+	border-bottom: 1px solid #d1d1d1;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	background: #e3e3e3;
+}
+
+#bxpop_menu #bxpop_nav li {
+	float: left;
+	width: 33.3%;
+	background: #e3e3e3;
+}
+
+#bxpop_menu #bxpop_nav li a {
+	border-right: 1px solid #999;
+	display: block;
+	text-decoration: none;
+	padding: 0 0 0 0.3em;
+	text-align: center;
+	color: #666;
+}
+
+#bxpop_menu #bxpop_nav li a:hover {
+	color: #009ddc;
+}
+
+#bxpop_menu_con {
+	height: 85%;
+	color: #666;
+	margin-top: 2.5em;
+	border-top: none
+}
+
+.tag {
+	padding: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.tag p {
+	margin: 0;
+}
+
+.bxtk_bg {
+	height: 100%;
+	background: #000;
+	opacity: 0.50;
+	filter: alpha(opacity = 50); /*支持 IE 浏览器*/
+	-moz-opacity: 0.50; /*支持 FireFox 浏览器*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+}
+
+.selected {
+	margin-top: -0.2em;
+	background: #ffffff !important;
+	color: #009ddc !important;
+	font-weight: bold;
+	border-top: 0.2em solid #009ddc;
+}
+
+.duty_book_18_title {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+.pdigtp03 {
+	padding: 0.3em 0;
+}
+
+.closebox {
+	top: 2.8em;
+	right: 4%;
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	z-index: 1000;
+}
+
+.close_icon {
+	background: url("../images/icon/active-close1.png") no-repeat scroll
+		center center/100% auto;
+	height: 2em;
+	width: 2em;
+	display: block;
+}
+
+/*续保方案20150713*/
+.font_org {
+	color: #ff9000;
+}
+
+.font_gray {
+	color: #bcbcbc;
+	text-decoration: line-through;
+}
+
+/*开关样式20150812*/
+.ghc_list {
+	padding: 1.1em 1em;
+	margin-top: 2.85em;
+}
+
+.name_left {
+	float: left;
+	font-size: 1em;
+	color: #666;
+}
+
+.ghc_list .kg_bg_no, .ghc_list .kg_bg_yes {
+	float: right;
+	height: 1.45em;
+	width: 3.5em;
+	background: #009ddc;
+	float: right;
+	border-radius: 9em;
+}
+
+.kganyuan {
+	height: 1.35em;
+	width: 1.35em;
+	margin: 0.03em 0.04em;
+	border-radius: 1.5em;
+	background: #fff;
+}
+
+.ghc_list .kg_bg_yes .kganyuan {
+	float: right;
+}
+
+.ghc_list .kg_bg_no span, .ghc_list .kg_bg_yes span {
+	font-size: 0.95em;
+	margin-top: -1.45em;
+	color: #ffffff;
+}
+
+.ghc_list .kg_bg_no span {
+	margin-left: 1.85em;
+	float: left;
+}
+
+.ghc_list .kg_bg_yes span {
+	margin-left: 0.85em;
+}
+
+.xzsbg {
+	z-index: 100;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	background: #000000;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.xzs_box {
+	z-index: 999;
+	position: fixed;
+	top: 12%;
+}
+
+.xzs_box img {
+	width: 82%;
+	margin-left: 8.5%;
+}
+
+.xzs_box .close_icon {
+	float: right;
+	margin-right: 1.3em;
+	margin-bottom: 1em;
+}
+
+.txx_box {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	color: #009ddc;
+	float: right;
+}
+
+.txx_box span.icon_txx {
+	display: block;
+	float: left;
+	line-height: 1.1em;
+	margin-right: 0.2em;
+	text-align: center;
+	border-radius: 1.3em;
+	height: 1.1em;
+	width: 1.1em;
+	border: 0.11em solid #009ddc;
+}
+
+/*车险服务首页20150910*/
+.mt1em {
+	margin-top: 1em;
+}
+
+.bgf3_ht {
+	height: 0.8em !important;
+	background: #f3f3f3 !important;
+}
+
+.icon_a_ul2 {
+	
+}
+
+.icon_a_ul2 li {
+	width: 100%;
+	float: left;
+	text-indent: 0.7em;
+	clear: both;
+	height: 4em;
+	line-height: 4em;
+	background: #ffffff;
+}
+
+.icon_a_ul2 li .icon_img {
+	width: 3.25em;
+	height: 4em;
+	float: left;
+}
+
+.icon_a_ul2 li img {
+	height: 1.4em;
+	margin: 1.2em 0 1.1em 1.05em;
+	float: left;
+}
+
+.icon_a_ul2 li span {
+	color: #666666;
+	font-size: 1.1em;
+	float: left;
+}
+
+.icon_a_ul2 li p {
+	background: url(../images/cxfw-arrow.png) no-repeat center;
+	background-size: 70%;
+	height: 2em;
+	width: 1em;
+	margin-right: 0.7em;
+	float: right;
+}
+
+.btm_bordf {
+	background: #dfdfdf;
+	height: 0.04em;
+	margin-left: 1em;
+}
+
+/*一键续保页面20151022(发送)*/
+.bg_f7 {
+	background: #f7f7f7;
+}
+
+.bg_fff {
+	background: #fff;
+}
+
+.bg_f0eff5 {
+	background: #f0eff5;
+}
+
+.bg_ea {
+	background: #eaeaee;
+}
+
+.bg_f6 {
+	background: #f6f6f6;
+}
+
+.font_coloryellow {
+	color: #f5a100;
+}
+
+.font_c_yellow_3bold {
+	color: #f5a100;
+	font-size: 2em;
+	line-height: 3em;
+}
+
+.margin_l {
+	margin: 0 0.7em;
+}
+
+.padding_l {
+	padding: 0 0.7em;
+}
+
+.font_1em {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #4b4b4b;
+}
+
+.font_1em_blue {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #005bac;
+}
+
+.font_1em_9b {
+	font-size: 1em;
+	color: #9b9b9b;
+}
+
+.font_1em_bold {
+	font-size: 1em;
+	color: #4b4b4b;
+	font-weight: bold;
+}
+
+.font_1em_9b_bold {
+	font-size: 1em;
+	color: #9b9b9b;
+	font-weight: bold;
+}
+
+.font_1em_000_bold {
+	font-size: 1em;
+	line-height: 2.5em;
+	color: #000;
+	font-weight: bold;
+}
+
+.font_08em_e8 {
+	font-size: 0.8em;
+	color: #e83344;
+	margin-left: 0.5em;
+	font-weight: normal;
+}
+
+.font_08em {
+	font-size: 0.8em;
+	padding: 0.3em 0em 0.3em 0.3em;
+}
+
+.spearte_bg_renewal {
+	height: auto;
+	padding: 0.4em;
+	background: #f7f7f7;
+}
+
+.header_1 {
+	height: 3.3em;
+	background: #005bac;
+	text-align: center;
+	background-size: 8% auto;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.header_1 img {
+	margin: 0.3em 0;
+}
+
+.renewal_send {
+	margin: 0em 0.5em;
+	padding-top: 3em;
+}
+
+.renewal_infor {
+	font-family: SimHei, Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #000;
+}
+
+.renewal_send .infor_title {
+	width: 40%;
+	float: left;
+	font-weight: bold;
+	margin-left: 3%;
+}
+
+.div_text {
+	margin: 5em 0;
+	text-align: center;
+}
+
+.div_text .renewal_data {
+	color: #f5a100;
+	font-weight: bold;
+}
+
+.div_text .txt_pwd {
+	width: 10%;
+	height: 2.3em;
+	border: 0.1em solid #d1d1d1;
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+.div_renewal_btn {
+	padding: 2em 0;
+	text-align: center;
+}
+
+.renewal_btn_div {
+	margin: 0 5%;
+	width: 90%;
+	height: 2.5em;
+	line-height: 2.4em;
+	font-size: 1em;
+	border-radius: 5px;
+	background: #e83344;
+	text-align: center;
+	color: #FFF;
+}
+
+.renewal_btn_div a {
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+
+.txt_title1 {
+	background: #e7f5fc;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 0.5em;
+	font-size: 0.9em;
+}
+
+.txt_title2 {
+	background: #fff;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 0.5em;
+	color: #333;
+	font-size: 1em;
+}
+
+.txt_title3 {
+	background: #fff;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 0.5em;
+}
+
+.floatright_icons {
+	background: url(../images/cxfw-arrow.png) no-repeat center;
+	background-size: 70%;
+	height: 2.5em;
+	margin-left: 0.5em;
+	width: 1em;
+	float: right;
+}
+
+.add_or_det_icons {
+	background: url(../images/renewal/add_or_delete.png) no-repeat center;
+	background-size: 100%;
+	height: 2.5em;
+	margin-left: 0.5em;
+	width: 4em;
+	float: right;
+}
+
+.floatbottom_icons {
+	background:
+		url(../../../images/cameraQuote/renewal/1cxfw-arrow_bottom.png)
+		no-repeat center;
+	background-size: 70%;
+	height: 2.5em;
+	margin-left: 0.3em;
+	width: 1.8em;
+	float: right;
+}
+
+.floattop_icons {
+	background: url(../../../images/cameraQuote/renewal/1cxfw-arrow_top.png)
+		no-repeat center;
+	background-size: 70%;
+	height: 2.5em;
+	margin-left: 0.3em;
+	width: 1.8em;
+	float: right;
+}
+
+.floatleft_icons {
+	background: url(../../../images/cameraQuote/1cxfw-arrow.png) no-repeat
+		center;
+	background-size: 70%;
+	height: 2.5em;
+	width: 1.8em;
+	float: right;
+}
+
+.Ins_icons_icons {
+	background: url(../images/renewal/Ins_icons.png) no-repeat;
+	width: 3em;
+	height: 2em;
+	background-size: 100%;
+	display: inline-block;
+}
+
+.icon_float_c {
+	width: 2em;
+	height: 1em;
+	background:
+		url(../../../images/cameraQuote/renewal/1cxfw-arrow_bottom.png)
+		no-repeat center;
+	background-size: 70%;
+	display: inline-block;
+}
+
+.renewal_table {
+	width: 100%;
+	border-top: 0.1em solid #f7f7f7;
+}
+
+.renewal_table tr th {
+	height: 2.5em;
+	color: #333;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.renewal_table tr td {
+	line-height: 2em;
+	border-top: 1px #fff;
+}
+
+.renewal_table tr .t_left { /*padding-left:0.5em;*/
+	font-size: .9em;
+	color: #4b4b4b;
+}
+
+.renewal_table tr .t_right {
+	padding-right: 3%;
+	font-size: 0.9em;
+	color: #4b4b4b;
+}
+
+.renewal_table3 tr td {
+	line-height: 2.5em;
+}
+
+.hongdi {
+	width: 2em;
+	height: 2.5em;
+	display: inline-block;
+	background: url(../images/renewal/hongdi.png) no-repeat center;
+	background-size: 100%;
+	margin-left: 0.8em;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+.hong_zhe {
+	background: #e83344;
+	color: #fff;
+	font-size: 0.8em;
+	margin-left: 1em;
+	padding: 0.3em 0.5em;
+	border-radius: 3px;
+}
+
+.font_12em {
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-right: 0.5em;
+}
+
+.title_right {
+	margin-top: -2em;
+	color: #fff;
+	margin-right: 0.8em;
+}
+
+.renewal_yixuan {
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.yixuan_icon {
+	width: 1.3em;
+	height: 2.5em;
+	display: inline-block;
+	background: url(../images/renewal/yixuan.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.7em;
+}
+
+.yixuan_icon_td {
+	width: 1.5em;
+	height: 1.8em;
+	display: inline-block;
+	background: url(../images/renewal/yixuan.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.5em;
+}
+
+.kong_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/kong.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.5em;
+}
+
+.yixuan_icon_no {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/yixuan_no.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.7em;
+}
+
+.addres_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/dingwei.png) no-repeat center;
+	background-size: 70%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.7em;
+}
+
+.div_bar_date_e7 {
+	background: #e7f5fc;
+	height: 5em;
+	padding-left: 0.7em;
+}
+
+.quchu_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/quchu.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.3em;
+	margin: 0 0.2em 0 0.2em;
+}
+
+.baozhang_icon {
+	width: 1.3em;
+	height: 2.5em;
+	display: inline-block;
+	background: url(../images/renewal/baozhang.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.7em;
+}
+
+.jiahao_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/jiahao.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.3em;
+	margin: 0 0.2em 0 0.2em;
+}
+
+.renewl_yeartitle {
+	padding-top: 1em;
+}
+
+.renewl_yeardiv {
+	width: 100%;
+	height: 8em;
+	text-align: center;
+}
+
+.renewl_yeardiv img {
+	height: 6em;
+	margin: 1em 0;
+}
+
+.renewal_year {
+	text-align: center;
+	margin-top: -0.5em;
+	width: 95%;
+	margin: 0.5em 0.3em;
+	border: 0.1em solid #c9c9c9;
+}
+
+.renewal_year tr th {
+	font-size: 0.8em;
+	color: #4b4b4b;
+	background: #e5e5e5;
+	padding: 0.5em 0.3em;
+}
+
+.renewal_year tr td {
+	color: #4a4a4a;
+	font-family: SimHei;
+	font-size: 0.8em;
+	padding: 0.3em 0;
+}
+
+.renewal_title {
+	font-family: SimHei;
+	padding: 0.5em 0;
+	font-size: 1.5em;
+	color: #000;
+}
+
+.ul_infor {
+	border-bottom: 0.1em solid #f7f7f7;
+	height: auto;
+	padding: 0.5em 0;
+}
+
+.infor_img {
+	width: 30%;
+}
+
+.infor_con {
+	width: 65%;
+	margin-left: 3%;
+}
+
+.infor_con .con_title1 {
+	color: #4a4a4a;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.infor_con .con_title2 {
+	color: #4a4a4a;
+	font-size: 0.9em;
+}
+
+.infor_con .con_title3 {
+	color: #9b9b9b;
+	font-size: 0.8em;
+}
+
+.libin_ul li {
+	font-size: 1em;
+	color: #4a4a4a;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.renewal_div_input {
+	padding: 1em 0.7em;
+}
+
+.renewal_div_input .input_txt {
+	padding: 0.5em;
+	width: 60%;
+}
+
+.btn_a {
+	padding: 0.5em;
+	background: #005bac;
+	color: #fff;
+	border-radius: 0.5em;
+	margin-left: 0.2em;
+	font-size: 0.8em;
+}
+
+.btn_a_no {
+	padding: 0.5em;
+	background: #ddd;
+	color: #9b9b9b;
+	border-radius: 0.5em;
+	margin-left: 0.2em;
+	font-size: 0.8em;
+}
+
+.m_l {
+	padding: 0.7em 0.5em;
+	background: #fff;
+}
+
+.oldnew_div {
+	padding: 0.3em 0.7em 0 0;
+}
+
+.icon_wh {
+	background: url(../images/renewal/icon_gp.png) no-repeat center;
+	background-size: 70%;
+	height: 1.2em;
+	margin-right: 2em;
+	width: 2em;
+	float: right;
+}
+
+.dis_none {
+	display: none;
+}
+
+.p_a {
+	padding: 1em 0.5em;
+}
+
+.lipin li {
+	border-top: 0.1em solid #f7f7f7;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 0.7em;
+}
+
+.laba_icon {
+	width: 2.5em;
+	height: 2.5em;
+	display: inline-block;
+	background: url(../images/renewal/laba.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+}
+
+.cheyian_ul li {
+	list-style-image: url(../images/renewal/li.png);
+	line-height: 1.8em;
+	margin-left: 1.2em;
+}
+
+.icon_arrow_down {
+	width: 0.5em;
+	height: 0.6em;
+	background: url(../images/renewal/arrow-down.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	margin: 0.2em 0 0 0.2em;
+}
+
+.div_infor {
+	border-bottom: 0.1em solid #f7f7f7;
+	border-top: 0.1em solid #f7f7f7;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 0.7em;
+}
+
+.div_infor .infor_txt {
+	width: 47%;
+	float: left;
+}
+
+.div_infor .infor_txt2 {
+	width: 25%;
+	float: left;
+}
+
+.div_infor .infor_txt3 {
+	width: 25%;
+	float: left;
+}
+
+.div_infor .infor_txt3 .btn_delete {
+	height: 2em;
+	background: #e83344;
+	color: #fff;
+	text-align: center;
+}
+/*  保险条款20150710*/
+#bgpop_menu {
+	margin: 8em 4% 0;
+	width: 92%;
+	height: 75%;
+	background: #fff;
+	position: absolute;
+	z-index: 1000;
+}
+
+#bgpop_menu #bgpop_nav {
+	line-height: 2.6em;
+	border: 0.1em solid #005bac;
+	display: block;
+	width: 96%;
+	padding: 0;
+	margin: 1em 1.2% 0;
+	list-style: none;
+	position: absolute;
+	border-radius: 0.3em;
+}
+
+#bgpop_menu #bgpop_nav li {
+	float: left;
+	width: 25%;
+	background: #fff;
+}
+
+#bgpop_menu #bgpop_nav li a {
+	border-right: 0.1em solid #005bac;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #005bac;
+}
+
+#bgpop_menu #bgpop_nav li a:hover {
+	color: #fff;
+	background: #005bac;
+}
+
+#bgpop_menu_con {
+	height: 82%;
+	color: #4b4b4b;
+	margin-top: 4em;
+	border-top: none
+}
+
+#bgpop_menu_con .tag {
+	padding: 1em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 95%;
+}
+
+.selected_2 {
+	background: #005bac !important;
+	color: #fff !important;
+}
+
+.closebox_2 {
+	top: 4.2em;
+	right: 4%;
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: 1.2em;
+	width: 92%;
+	position: absolute;
+	z-index: 1000;
+	background: #005bac;
+	text-align: center;
+	color: #fff;
+}
+
+.close_icon_2 {
+	top: 0em;
+	right: 0;
+	background: url("../images/icon/active-close1.png") no-repeat scroll
+		center center/70% auto;
+	height: 2.5em;
+	width: 2.5em;
+	display: block;
+	position: absolute;
+}
+
+.con_div .p_title {
+	text-align: center;
+	font-size: 1.2em;
+	color: #000;
+	font-weight: bold;
+}
+
+.text_input_infor {
+	height: auto;
+	background: #fff;
+	border-top: 0.1em solid #dfdfdf;
+}
+
+.div_text_box_infor {
+	width: 100%;
+	height: 2.5em;
+	line-height: 2.5em;
+	border-bottom: 0.1em #d9d9d9 solid;
+	background: #fff;
+}
+
+.text_span_title_infor {
+	width: 30%;
+	margin-left: 0.5em;
+	text-align: left;
+	color: #4b4b4b;
+	line-height: 2.5em;
+	font-size: 0.9em;
+}
+
+.input_text_infor {
+	text-align: left;
+	border: none;
+	height: 1.5em;
+	margin: 0.3em;
+	margin-left: 0.5em;
+	color: #4b4b4b;
+	outline: none;
+	margin-top: 0.4em;
+	font-size: 0.9em;
+	width: 60%;
+}
+
+.input_text_infor_2 {
+	width: 43%;
+	text-align: left;
+	border: none;
+	height: 1.5em;
+	margin: 0.3em;
+	color: #4b4b4b;
+	outline: none;
+	margin-top: 0.4em;
+}
+
+.div_text_box_infor .btn_a {
+	color: #fff;
+}
+
+.txt_pt {
+	margin-top: 0.8em;
+}
+
+.txt_name {
+	height: 5em;
+	line-height: 5em;
+}
+
+.txt_name .t_right {
+	width: 30%;
+}
+
+.txt_name .t_left {
+	color: #f7f7f7;
+	font-size: 3em;
+}
+
+/* 支付方式tab切换 */
+.weixin_tabs {
+	
+}
+
+.tab_menu {
+	overflow: hidden;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+	border: 0.1em solid #005bac;
+	border-radius: 0.5em;
+}
+
+.tab_menu li {
+	width: 25%;
+	height: 2em;
+	float: left;
+	background: #fff;
+	text-align: center;
+}
+
+.tab_menu li a {
+	line-height: 2em;
+	color: #005bac;
+	border-right: 0.1em solid #005bac;
+	display: block;
+}
+
+.tab_menu li.current {
+	line-height: 2em;
+	background: #005bac;
+}
+
+.tab_menu li.current a {
+	color: #fff;
+}
+
+.tab_box {
+	height: auto;
+}
+
+.tab_box .hide {
+	display: none;
+}
+
+.dowl {
+	background: url(../images/renewal/pdf.jpg) no-repeat center;
+	background-size: 50%;
+	height: 11em;
+	margin-right: 2em;
+	width: 100%;
+}
+
+.icon_delete {
+	background: url(../images/renewal/delete.png) no-repeat center;
+	background-size: 100%;
+	height: 2em;
+	width: 2em;
+	float: right;
+}
+
+.gess {
+	height: 0.6em;
+	margin-top: 0.5em;
+	background-color: #efefef;
+	border-radius: 0.4em;
+	box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+	position: inherit;
+	margin-right: 1em;
+}
+
+.gessul {
+	height: 100%;
+	font-size: 0.6em;
+	color: #ffffff;
+	text-align: center;
+	background-color: #6eb92b;
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 0.4em;
+}
+
+/* 个人大厅 */
+.infor_div {
+	border-bottom: 0.1em solid #f7f7f7;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding-left: 0.7em;
+}
+
+.header_div {
+	height: 8em;
+}
+
+.header_div1 {
+	height: 5em;
+	margin-top: 4em;
+}
+
+.header_img {
+	width: 35%;
+	text-align: right;
+}
+
+.header_img img {
+	width: 60%;
+}
+
+.header_con {
+	margin-top: 1em;
+	margin-left: 0.7em;
+}
+
+.font1em_blue {
+	font-size: 1em;
+	color: #005aa4;
+}
+
+/*图标*/
+.border_icon {
+	width: 1.5em;
+	height: 1.2em;
+	display: inline-block;
+	background: url(../images/renewal/border.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.5em;
+}
+
+.border_icon_yes {
+	width: 1.5em;
+	height: 1.2em;
+	display: inline-block;
+	background: url(../images/renewal/border_yes.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.5em;
+}
+
+.duihao_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/renewal/duihao.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.2em;
+	margin: 0 0.3em 0 0.5em;
+}
+
+.libing {
+	background: #fff;
+	padding: 0.5em;
+	height: auto;
+	display: inline-block;
+}
+
+.libing li {
+	padding: 0.2em 0.3em;
+	float: left;
+	height: 1.6em;
+}
+
+.libing li a {
+	padding: 0.3em 0.5em;
+	font-size: 0.8em;
+	color: #4b4b4b;
+	background: #e5e5e5;
+	border-radius: 0.4em;
+	box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+/*  保险条款20151125*/
+#tab_menu {
+	margin: 3.5em 2% 0;
+	width: 96%;
+	height: 85%;
+	background: #fff;
+	position: absolute;
+	z-index: 1000;
+}
+
+#tab_menu #tab_nav {
+	overflow: hidden;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+	border: 0.1em solid #005bac;
+	border-radius: 0.5em;
+}
+
+#tab_menu #tab_nav li {
+	width: 25%;
+	height: 2em;
+	float: left;
+	background: #fff;
+	text-align: center;
+}
+
+#tab_menu #tab_nav li a {
+	line-height: 2em;
+	color: #005bac;
+	border-right: 0.1em solid #005bac;
+	display: block;
+}
+
+#tab_menu #tab_nav li a:hover {
+	color: #009ddc;
+}
+
+#tab_menu_con {
+	height: 85%;
+	color: #666;
+	margin-top: 0.5em;
+	border-top: none
+}
+
+.tab_tag {
+	padding: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.tab_tag p {
+	margin: 0;
+}
+
+.tab_bxtk_bg {
+	height: 100%;
+	background: #fff;
+}
+
+.tab_selected {
+	margin-top: -0.2em;
+	background: #005bac !important;
+	color: #fff !important;
+	border-top: 0.2em solid #009ddc;
+}
+
+/* 自助续保 */
+body>* {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.searchAreaCon {
+	height: 3em;
+	padding: 0.5em 0.5em;
+}
+
+.searchAreaCon .search-button {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	margin: 0.4em 0;
+	background: url(../images/new_icon/seo.png) no-repeat center;
+	background-size: 100%;
+}
+
+.searchAreaCon input[type="text"] {
+	width: 87%;
+	height: 2.5em;
+	border: 0;
+	border-radius: 5px;
+	line-height: normal;
+	outline: none;
+	padding: 0.5em;
+	overflow: hidden;
+	color: #4b4b4b;
+	font-size: 0.8em;
+	font-family: "microsoft yahei";
+	padding-left: 2.4em;
+}
+
+.title_fff {
+	height: 2em;
+	padding: 0 0.5em;
+	background: #fff;
+	line-height: 2em;
+}
+
+.ding_icon {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/new_icon/return.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.4em;
+	margin: 0 0.1em 0 0.5em;
+}
+
+.Box .city-tit {
+	padding: 0 0.5em;
+	font-size: 1em;
+	color: #000;
+	line-height: 2em;
+	background-color: #fff;
+	display: block;
+}
+
+.Box .hot-city, .Box .p_city, .Box .plate {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.Box .hot-city li {
+	float: left;
+	width: 25%;
+	line-height: 3em;
+	text-align: center;
+	font-size: 1em;
+}
+
+.Box .hot-city li a {
+	color: #4b4b4b;
+	border: 0.1em solid #4b4b4b;
+	border-radius: 5px;
+	padding: 0.2em 0.8em;
+}
+
+.Box .province, .Box .plate_title {
+	padding: 0 0.5em;
+	font-size: 1em;
+	color: #000;
+	line-height: 3em;
+	display: block;
+}
+
+.Box .p_city li {
+	line-height: 3em;
+	text-align: left;
+	font-size: 1em;
+	padding: 0 0.5em;
+	border-bottom: 0.1em solid #f7f7f7;
+}
+
+.Box .p_city li a {
+	color: #4b4b4b;
+}
+
+.Box .plate li {
+	float: left;
+	width: 25%;
+	line-height: 3em;
+	text-align: center;
+	font-size: 1em;
+}
+
+.Box .plate li a {
+	color: #4b4b4b;
+	border: 0.1em solid #4b4b4b;
+	border-radius: 5px;
+	padding: 0.2em 0.9em;
+}
+
+.Box .plate li .active {
+	background: #6fb92c;
+	color: #fff;
+	border: 0.1em solid #6fb92c;
+}
+
+/* 新保报价 */
+.font_08_blue {
+	font-size: 0.9em;
+	color: #005bac;
+	font-weight: 400;
+	border: none;
+	text-align: right;
+}
+
+.txt_title2 .floatleft .font_span {
+	color: #9b9b9b;
+	font-size: 0.8em;
+	font-weight: 400;
+	margin-left: 0.3em;
+}
+
+.data_div {
+	background: #fff;
+	padding: 0.3em 0.5em;
+	font-size: 0.8em;
+	height: 1.6em;
+	line-height: 1.6em;
+	clear: both;
+}
+
+.weima_icons {
+	background: url(../images/new_icon/weima.png) no-repeat center;
+	background-size: 100%;
+	height: 1.5em;
+	width: 1.5em;
+}
+
+/* 保费变动原因 */
+.div_p_b {
+	padding: 0.5em;
+	background: #fff;
+	border-bottom: 0.1em solid #c9c9c9;
+}
+
+.icon_pgDN {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/new_icon/icon_pgDn.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.4em;
+	margin: 0 0.1em 0 0.5em;
+}
+
+.icon_pgUP {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/new_icon/icon_pgUp.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.4em;
+	margin: 0 0.5em 0 0.1em;
+}
+
+.DN {
+	width: 1.5em;
+	height: 6em;
+	display: inline-block;
+	position: relative;
+	color: #6fb92c;
+	background: url(../images/new_icon/DN.png) no-repeat center;
+	background-size: 100%;
+}
+
+.UP {
+	width: 1.5em;
+	height: 6em;
+	display: inline-block;
+	position: relative;
+	color: #e83344;
+	background: url(../images/new_icon/UP.png) no-repeat center;
+	background-size: 100%;
+}
+
+.icon_yuan {
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	background: url(../images/new_icon/yuan.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.4em;
+	margin: 0 0.5em 0 0.1em;
+}
+
+/* 续保报价 */
+.money_contrast {
+	height: 6em;
+	padding: 0 0.5em;
+	background: #fff;
+}
+
+.money_contrast .floatleft {
+	width: 33.33%;
+}
+
+.line_h {
+	line-height: 3em;
+}
+
+.pos_font {
+	position: absolute;
+	color: #6fb92c;
+	margin-top: -3.8em;
+	width: 33.33%;
+}
+
+.font1em_000 {
+	color: #000;
+	font-weight: bold;
+}
+
+.font1em_f6 {
+	color: #f6a20c;
+	font-weight: bold;
+}
+
+.div_address {
+	height: 4em;
+	padding: 0 0.5em;
+	background: #fff;
+}
+
+.div_address .floatleft {
+	font-size: 1em;
+	color: #000;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+.div_address .floatright {
+	width: 60%;
+	font-weight: 400;
+	font-size: 0.6em;
+	color: #9b9b9b;
+}
+
+.text_infor {
+	width: 30%;
+	margin-left: 0.5em;
+	text-align: left;
+	color: #4b4b4b;
+	line-height: 2.5em;
+}
+/* 靠最底层显示 */
+.ui_footer_2 {
+	width: 100%;
+	height: 2.4em;
+	line-height: 2.4em;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	z-index: 999;
+	bottom: 0;
+	overflow: hidden;
+	background: #fff;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	_position: absolute;
+	_bottom: auto;
+	_top: expression(eval(document.documentElement.scrollTop +
+		document.documentElement.clientHeight-this.offsetHeight- ( parseInt(this.currentStyle.marginTop
+		, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+}
+
+.ui_title_jishu {
+	width: 70%;
+	color: #000;
+	height: 2.4em;
+	line-height: 2.4em;
+	text-align: left;
+}
+
+.ui_title_jishu_2 {
+	width: 30%;
+	color: #fff;
+	height: 2.4em;
+	line-height: 2.4em;
+	background: #e83344;
+	background-size: 16% auto;
+}
+/* 是否切换按钮 */
+.Yes_No_div {
+	float: right;
+	width: 4em;
+	height: 2em;
+	line-height: 2em;
+	background: #e83344;
+	color: #fff;
+	border-radius: 15px;
+}
+
+.yuang_No {
+	float: left;
+	width: 1.9em;
+	height: 1.9em;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.Yes_No_div .span_font_No {
+	float: right;
+	margin-right: 0.3em;
+}
+
+.yuang_Yes {
+	float: right;
+	width: 1.9em;
+	height: 1.9em;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.Yes_No_div .span_font_Yes {
+	float: left;
+	margin-left: 0.3em;
+}
+
+/* 投保成功 */
+.title_div {
+	height: 3em;
+	text-align: center;
+	line-height: 3em;
+	font-size: 1.2em;
+	color: #000;
+	font-weight: bold;
+}
+
+.logo_tel {
+	height: 5em;
+	background: #fff;
+	border-bottom: 0.1em solid #cacaca;
+}
+
+.logo {
+	width: 50%;
+	margin: 0.5em;
+}
+
+.icon_logo {
+	height: 3.8em;
+	width: 100%;
+	display: inline-block;
+	background: url(../images/new_icon/logo.png) no-repeat center;
+	background-size: 100%;
+}
+
+.tel {
+	font-size: 0.8em;
+	line-height: 6.2em;
+	margin-right: 0.5em;
+}
+
+.tel span {
+	color: #005bac;
+}
+
+.icon_duihao {
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	background: url(../images/new_icon/duihao.png) no-repeat center;
+	background-size: 100%;
+	vertical-align: -0.4em;
+	margin: 0 0.5em 0 0.1em;
+}
+
+.baodan_table {
+	width: 100%;
+	background: #fff;
+}
+
+.baodan_table tr {
+	
+}
+
+.baodan_table tr td {
+	padding: 0.5em 0;
+}
+
+.baodan_table tr .t_left {
+	padding-left: 0.5em;
+}
+
+.baodan_table tr .t_right {
+	padding-right: 0.5em;
+}
+
+/* 20160108版本 */
+.tou_title1 {
+	width: 63%;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 2.88em;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	font-family: "Microsoft YaHei";
+}
+/* 输入框 */
+.text_input_div08 {
+	height: 3em;
+	line-height: 3em;
+	background: #fff;
+	margin: 0 0.7em;
+	border-bottom: 0.1em solid #d9d9d9;
+}
+
+.text_input_title08 {
+	font-size: 0.95em;
+	color: #8c8c8c;
+	width: 30%;
+	float: left;
+}
+
+.text_input_infor08 {
+	float: left;
+	margin: 0.8em 0.2em;
+	border: none;
+	color: #333333;
+	outline: none;
+}
+
+.spearte_08 {
+	height: auto;
+	padding: 0.5em;
+	background: #f3f3f3;
+	border: 0.1em solid #d9d9d9;
+	border-left: none;
+	border-right: none;
+}
+
+.tishi_div {
+	font-size: 0.8em;
+	text-align: center;
+	color: #999999;
+	line-height: 4em;
+}
+
+.wid80 {
+	width: 80%;
+}
+
+.icons_left_bottom {
+	background: url(../images/renewal/1cxfw-arrow_bottom.png) no-repeat
+		center;
+	background-size: 100%;
+	height: 3em;
+	width: 1em;
+	float: left;
+}
+
+.mianpei{
+	width:100%;
+	color:#8c8c8c;
+	font-size:0.9em;
+}
+

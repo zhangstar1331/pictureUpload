@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+*Copyright:http://www.newtouch.cn
+*Email:min.wang@newtouch.cn
+*Version:V1.0
+*Date:20140920
+*Create:wangm
+*License:20140920IBH1-14847
+*/
+
+/*base.css*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	font-family: "Microsoft YaHei","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6, p, i, em {
+	font-weight: normal;
+	font-style: normal;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, img {
+	display: block;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+table {
+	border-spacing: 0;
+}
+tbody, thead, tfoot {
+	vertical-align: middle
+}
+input, textarea, select {
+	vertical-align: middle;
+	-webkit-tap-highlight: rgba(0,0,0,0);
+}
+ul, ol, li, dl, dt, dd, menu {
+	list-style: none outside none;
+}
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	text-decoration: none;
+	outline: none;
+	background: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+a:visited {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	text-decoration: none;
+	outline: none;
+	background: none;
+}
+/*common.css*/
+wbr:after {
+	content: "​";
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+.clearfix {
+ *zoom:1
+}
+.clear {
+	clear: both
+}
+.hide {
+	display: none
+}
+.show {
+	display: block;
+}
+.f_left {
+	float: left
+}
+.f_right {
+	float: right
+}
+.iscroll {
+	float: left;
+	width: 100%
+}
+/*header*/
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 800
+}
+.content {
+	width: 100%;
+	margin-top: 3.3em;
+	overflow: hidden
+}
+.button {
+	float: left;
+	width: 100%;
+	height: 2.4em;
+	line-height: 2.4em;
+	color: #fff;
+	border-radius: .5em;
+	background: #005bac;
+	text-align: center;
+}
+.button_light {
+	width: 100%;
+	height: 2.4em;
+	line-height: 2.4em;
+	color: #333;
+	border-radius: .5em;
+	background: #0788FB;
+	text-align: center;
+}
+/*文本框样式*/
+.input_text {
+	width: 100%;
+	font-size: 1.2em;
+	text-indent: .3em;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.input_text:focus {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-modify: read-write-plaintext-only;
+}
+/*头像框样式*/
+.cpic_personal_photo {
+	width: 4em;
+	height: 4em;
+	border-radius: 4em;
+	border: solid #005bac 0.2em;
+	margin: 0.5em auto;
+}
+.cpic_personal_photo_box {
+	display: block;
+	width: 4em;
+	height: 4em;
+	border-radius: 2em;
+	margin: 0 auto;
+}
+.cpic_personal_photo_gray {
+	background: url(../images/photo-gray.png) no-repeat;
+	background-size: 70%;
+	background-position: center 0.7em;
+}
+.cpic_personal_photo_light {
+	background: url(../images/photo-light.png) no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+.cpic_personal_info {
+	width: 100%;
+	height: 40px;
+}
+.cpic_personal_title {
+	width: 100%;
+	text-align: center;
+	font-size: .9em;
+	color: #005bac;
+}

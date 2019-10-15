@@ -1,0 +1,31 @@
+.imageBox  .addPhoto{
+    display: block;
+    width: 20%;
+    height: auto;
+    border: 2px dashed #E6E6E6;
+    margin-left: 8.5%;
+    margin-top:20px;
+    background: url(../../../images/icon-imageAdd.png) no-repeat center;
+    background-size: 40% 40%;
+    float:left;
+}
+.imageBox  .nAddPhoto{
+    display: block;
+    width: 20%;
+    height: auto;
+    border: 2px dashed #E6E6E6;
+    margin-left: 8.5%;
+    margin-top:20px;
+    background: url(../../../images/icon-imageAdd.png) no-repeat center;
+    background-size: 40% 40%;
+    float:left;
+}
+.select-no {
+    background: url(../../../images/icon-subtration.png) no-repeat;
+    width: 1.3em;
+    height: 1.3em;
+    background-size: 1.2em;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 17%;
+}

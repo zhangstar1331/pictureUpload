@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS 基础皮肤样式 */
+
+.headercolor {
+	background: #005bac;
+}
+.footercolor {
+	background: #005bac;
+}
+.footercolor-white {
+	background: #fff;
+}
+.jumptitle {
+	background: #009ddc;
+}
+/* CSS 基础字体样式 */
+.font1em {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	letter-spacing: 0.1em;
+}
+.font1em-bold {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	font-weight: bold;
+}
+.font09em-bold {
+	font-size: 0.95em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	font-weight: bold;
+}
+.font12em-bold {
+	font-size: 1.2em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	font-weight: bold;
+}
+.font1em-500 {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	font-weight: 500;
+}
+.font08em-bold {
+	font-size: 0.8em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+	font-weight: bold;
+}
+.font08em {
+	font-size: 0.8em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+}
+.font087em {
+	font-size: 0.87em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+}
+.font05em {
+	font-size: 0.5em;
+	font-family: "Microsoft YaHei";
+	color: #666666;
+}
+.font1em-blue {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #009ddc;
+}
+.font07em-blue {
+	font-size: 0.7em;
+	font-family: "Microsoft YaHei";
+	color: #009ddc;
+}
+.font1em-org {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #ff9000;
+	font-weight: 500;
+}
+.font22em-org {
+	font-size: 2.2em;
+	font-family: "Microsoft YaHei";
+	color: #ff9000;
+	font-weight: 500;
+}
+.font2em-white {
+	font-size: 2em;
+	font-family: "Microsoft YaHei";
+	color: #fff;
+	font-weight: 500;
+}
+.bgwhite {
+	background: #fff;
+}
+.font1em-blue2 {
+	font-size: 1.5em;
+	font-family: "Microsoft YaHei";
+	color: #005bac;
+}
+.font15em-white {
+	font-size: 1.5em;
+	font-family: "Microsoft YaHei";
+	color: #fff;
+}
+.font1em-white {
+	font-size: 1em;
+	font-family: "Microsoft YaHei";
+	color: #fff;
+}
+.font07em-white {
+	font-size: 0.7em;
+	font-family: "Microsoft YaHei";
+	color: #fff;
+}
+.font08em-red {
+	color: #F00;
+	font-size: 0.8em;
+	font-family: "Microsoft YaHei";
+}

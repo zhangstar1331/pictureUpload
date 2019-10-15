@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>图片上传</title>
+		<link href="css/base-css.css" rel="stylesheet" type="text/css">
+		<link href="css/boilerplate.min.css" rel="stylesheet" type="text/css">
+		<link href="css/onekey-service.css" rel="stylesheet" type="text/css">
+		<link href="css/universal.css" rel="stylesheet" type="text/css">
+		<link href="css/Photoquotetype.css" rel="stylesheet" type="text/css">
+		<link href="css/ordercasecheck.css" rel="stylesheet" type="text/css">
+		<!--组件依赖css end-->
+		<link href="css/photo.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/imageType.css">
+		<script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>
+	    <script type="text/javascript" src='js/uploadPicture/mobileBUGFix.mini.js'></script>
+		<script type="text/javascript" src='js/uploadPicture/exif.js'></script>
+		<script type="text/javascript" src='js/uploadPicture/megapic-image.js'></script>
+	</head>
+	<body>
+    <div id="idPartView" class="bg_ea">
+		<div class="content main bg_f6" id="wrapper2">
+			<div class="iscroll">
+				<div class="bg-f">
+					<div class="imageBox" style="border-bottom: 1px solid #f7f7f7;">
+						<div class="imageBoxInfo">照片</div>
+						<div class='onePicLimit idInfo'>
+							<span class='addPhoto onePhoto' style="height: 71px;">
+								<input class="hidden-input" type="file" accept="image/*"
+								 style="height: 71px;opacity: 0;"/>
+							</span>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		/*
+	imageChoosingView:选择照片种类视图
+	camera:相机相关功能实现
+	app：页面启动器
+	jsonModel：本页面有两个jsonMoel的实体对象， createRequrestNo 和 uploadPhotos。
+				createRequrestNo用来创建任务号，uploadPhotos用来上传图片
+
+	view： 1.每个view对应其页面的逻辑，都有_el变量和init,_bindEvnets,render三个方法。
+	 		_el即为其代表的DOM节点，_bindEvents为绑定事件。
+		   2.view对外只暴漏 init()和render()两个方法，init为该页面最
+		     初的初始化，render为该页面的渲染和显示。
+	       3.除init和render，别的方法(下划线开头的方法)只能view内部调用。
+	       4.除_el外，如果有其他变量，即用来作标识位或
+	       	 记录该页面信息(新增设备，车船税)。
+	jsonModel：1._el即为发送报文的基本模型
+	 		   2.对外暴漏init和save方法，init表示数据初始化，save为
+				  复制页面信息到数据模型中并发起http请求。
+	 */
+	var ua = navigator.userAgent.toLowerCase();
+	var android = /android/.test(ua);
+	var compressRate = 0.8;//压缩率
+	var maxWidths = 1200;
+	var maxHeights = 1800;
+	var ImageTool = {
+	    /*
+	     * @param rawImageArray{ArrayBuffer|Array|Blob}
+	     */
+	    getSegments: function(rawImage, callback) {
+	        if (rawImage instanceof Blob) {
+	            var that = this;
+	            var fileReader = new FileReader();
+	            fileReader.onload = function() {
+	                that.getSegments(fileReader.result, callback);
+	            };
+	            fileReader.readAsArrayBuffer(rawImage);
+	        } else {
+	            if (!rawImage.length && !rawImage.byteLength) {
+	                return [];
+	            }
+	            var head = 0,
+	                segments = [];
+	            var length,
+	                endPoint,
+	                seg;
+	            var arr = [].slice.call(new Uint8Array(rawImage), 0);
+
+	            while (1) {
+	                if (arr[head] === 0xff && arr[head + 1] === 0xda) { //Start of Scan 0xff 0xda  SOS
+	                    break;
+	                }
+
+	                if (arr[head] === 0xff && arr[head + 1] === 0xd8) { //Start of Image 0xff 0xd8  SOI
+	                    head += 2;
+	                } else { //找到每个marker
+	                    length = arr[head + 2] * 256 + arr[head + 3]; //每个marker 后 的两个字节为 该marker信息的长度
+	                    endPoint = head + length + 2;
+	                    seg = arr.slice(head, endPoint); //截取信息
+	                    head = endPoint;
+	                    segments.push(seg); //将每个marker + 信息 push 进去。
+	                }
+	                if (head > arr.length) {
+	                    break;
+	                }
+	            }
+	            callback(segments);
+	        }
+	    },
+	    /*
+	     * @param resizedImg{ArrayBuffer|Blob}
+	     * @param exifArr{Array|Uint8Array}
+	     */
+	    insertEXIF: function(resizedImg, exifArr, callback) {
+	        if (resizedImg instanceof Blob) {
+	            var that = this;
+	            var fileReader = new FileReader();
+	            fileReader.onload = function() {
+	                that.insertEXIF(fileReader.result, exifArr, callback);
+	            };
+	            fileReader.readAsArrayBuffer(resizedImg);
+	        } else {
+	            var arr = [].slice.call(new Uint8Array(resizedImg), 0);
+	            if (arr[2] !== 0xff || arr[3] !== 0xe0) {
+	                // throw new Error("Couldn't find APP0 marker from resized image data.");
+	                return resizedImg; //不是标准的JPEG文件
+	            }
+
+	            var app0_length = arr[4] * 256 + arr[5]; //两个字节
+
+	            var newImage = [0xff, 0xd8].concat(exifArr, arr.slice(4 + app0_length)); //合并文件 SOI + EXIF + 去除APP0的图像信息
+
+	            callback(new Uint8Array(newImage));
+	        }
+	    },
+	    /*
+	     * @param segments{Array|Uint8Array}
+	     */
+	    getEXIF: function(segments) {
+	        if (!segments.length) {
+	            return [];
+	        }
+	        var seg = [];
+	        for (var x = 0; x < segments.length; x++) {
+	            var s = segments[x];
+	            //TODO segments
+	            if (s[0] === 0xff && s[1] === 0xe1) { // app1 exif 0xff 0xe1
+	                seg = seg.concat(s);
+	            }
+	        }
+	        return seg;
+	    },
+	    /*
+	     *@param base64{String}
+	     */
+	    decode64: function(base64) {
+	        var b64 = "data:image/jpeg;base64,";
+	        if (base64.slice(0, 23) !== b64) {
+	            return [];
+	        }
+	        var binStr = window.atob(base64.replace(b64, ""));
+	        var buf = new Uint8Array(binStr.length);
+	        for (var i = 0, len = binStr.length; i < len; i++) {
+	            buf[i] = binStr.charCodeAt(i);
+	        }
+	        return buf;
+	    },
+	    /*
+	     *@param arr{Array}
+	     */
+	    encode64: function(arr) {
+	        var data = "";
+	        for (var i = 0, len = arr.length; i < len; i++) {
+	            data += String.fromCharCode(arr[i]);
+	        }
+	        return "data:image/jpeg;base64," + window.btoa(data);
+	    }
+	};
+	$(function(){
+	    initPages();
+	});
+
+	function initPages() {
+		//控制图像上传的容器高度
+	 	var obj = $('.imageBox>span');
+	 	width = obj.width() - 4;
+	 	obj.css({'height':width + 'px'});
+	 	camera.init();
+		idPartView.init();
+	}
+	function showImage(file,callback){
+	    var reader = new FileReader();
+	    reader.onload = function(){
+	        callback(reader.result);
+	    }
+	    reader.readAsDataURL(file);
+	}
+	var idPartView = {
+		_el: $('#idPartView'),
+		init: function() {
+			this._bindEvents();
+		},
+		_bindEvents: function() {
+			$('#idPartView .hidden-input').on('change', camera.openCamera.bind(camera));
+		}
+	};
+	var camera = {
+		picID: null,
+		imageData: [],
+		init: function() {},
+		//拍照或从相册中选择
+		openCamera: function(e) {
+			this.picID = $(e.target).parent();
+			try {
+				var data = new Object();
+				data.name = "";
+				var Orientation = null;
+				var file = e.target.files[0];
+				var oldBase64Size = file.size;
+				var oReader = new FileReader();
+		        oReader.onload = function(e) {
+		    		//获取照片方向角属性，用户旋转控制
+		    		EXIF.getData(file, function() {
+		    		    EXIF.getAllTags(this);
+		    		    Orientation = EXIF.getTag(this, 'Orientation');
+		    		});
+		    		if(oldBase64Size>500*1024){//大于500K时进行压缩
+		    			var image = new Image();
+						image.src = e.target.result;
+						image.onload = function() {
+							var expectWidth = this.naturalWidth;
+							var expectHeight = this.naturalHeight;
+							if (this.naturalWidth > this.naturalHeight && this.naturalWidth > maxWidths) {
+								expectWidth = maxWidths;
+								expectHeight = expectWidth * this.naturalHeight / this.naturalWidth;
+							} else if (this.naturalHeight > this.naturalWidth && this.naturalHeight > maxHeights) {
+								expectHeight = maxHeights;
+								expectWidth = expectHeight * this.naturalWidth / this.naturalHeight;
+							}
+							var canvas = document.createElement("canvas");
+							var ctx = canvas.getContext("2d");
+							canvas.width = expectWidth;
+							canvas.height = expectHeight;
+							ctx.drawImage(this, 0, 0, expectWidth, expectHeight);
+							if (navigator.userAgent.match(/iphone/i)) {//修复ios
+								var mpImg = new MegaPixImage(image);
+								mpImg.render(canvas, {
+									maxWidth: maxWidths,
+									maxHeight: maxHeights,
+									quality: compressRate,
+									orientation: Orientation
+								});
+								canvas.toBlob(function(blob){
+					                ImageTool.getSegments(file,function(segments){
+					                    var exif = ImageTool.getEXIF(segments);//获取exif信息
+					                    ImageTool.insertEXIF(blob,exif,function(newImage){
+					                            showImage(new Blob([newImage],{type : "image/jpeg"}),function(src){
+					                                data.base64 = src;
+					                                camera._onPhotoURISuccess(data);
+					                            });
+					                    });
+					                });//获取 分割 segments
+					            }, "image/jpeg", compressRate);
+							}else if (navigator.userAgent.match(/Android/i)) {// 修复android
+								var encoder = new JPEGEncoder();
+								canvas.toBlob(function(blob){
+					                ImageTool.getSegments(file,function(segments){
+					                    var exif = ImageTool.getEXIF(segments);//获取exif信息
+					                    ImageTool.insertEXIF(blob,exif,function(newImage){
+					                            showImage(new Blob([newImage],{type : "image/jpeg"}),function(src){
+					                                data.base64 = src;
+					                                camera._onPhotoURISuccess(data);
+					                            });
+					                    });
+					                });//获取 分割 segments
+					            }, "image/jpeg", compressRate);
+							}else{
+								var mpImg = new MegaPixImage(image);
+								mpImg.render(canvas, {
+									maxWidth: maxWidths,
+									maxHeight: maxHeights,
+									quality: compressRate,
+									orientation: Orientation
+								});
+								canvas.toBlob(function(blob){
+					                ImageTool.getSegments(file,function(segments){
+					                    var exif = ImageTool.getEXIF(segments);//获取exif信息
+					                    ImageTool.insertEXIF(blob,exif,function(newImage){
+					                            showImage(new Blob([newImage],{type : "image/jpeg"}),function(src){
+					                                data.base64 = src;
+					                                camera._onPhotoURISuccess(data);
+					                            });
+					                    });
+					                });//获取 分割 segments
+					            }, "image/jpeg", compressRate);
+							}
+						};
+		    		}else{
+		    			data.base64 = e.target.result;
+			            camera._onPhotoURISuccess(data);
+		    		}
+				};
+		        oReader.readAsDataURL(file);
+			} catch (e) {
+				alert("--启动相机或相册error-->"+e.name + "  " + e.message);
+			}
+		},
+		//拍照成功后的回调
+		_onPhotoURISuccess: function(data) {
+			if (typeof data == 'string') {
+				data = JSON.parse(data);
+			}
+			try {
+				var imageData = camera.imageData;
+				imageData.push(data);
+				var num = imageData.length;
+				var html = '<span class="addPhoto" id="addPhoto_' + num + '" style="height: 71px;"><i class="select-no deletePhoto" id="deletePhoto_' + num + '"></i><img class="smallImage" id="smallImage_' + num + '" alt="" src="" uri="" index=' + num + ' width="100%" height="100%"></span>';
+				camera.picID.before(html);
+				var parentDiv = camera.picID.parent();
+				var smallImage = parentDiv.find('.smallImage');
+				var smallImageLen = smallImage.length;
+				if (camera.picID.parent().hasClass('onePicLimit')) {
+					if(smallImageLen>=2){
+						parentDiv.find('.onePhoto').hide();
+					}
+				}
+				$('#smallImage_' + num).attr('src', data.base64);
+				$('#smallImage_' + num).attr('uri', data.fileName);
+				camera._deletePhoto(num);
+				camera.onLoadPhoto("#addPhoto_" + num, data.base64);
+			} catch (e) {
+				alert(e.name + '  ' + e.message);
+			}
+		},
+		//删除图片
+		_deletePhoto: function(num) {
+			$('#deletePhoto_' + num).on("click", function(e) {
+				$('#addPhoto_' + num).parent().find('.onePhoto').show();
+				$('#addPhoto_' + num).remove();
+				e.stopPropagation();
+			});
+		},
+		//拍照失败回调
+		_onFail: function(msg) {
+			cpic.alert("拍照出错信息：" + JSON.stringify(msg));
+		},
+		//点击图片时加载大图
+		onLoadPhoto: function(iconPicture, imgUrl) {
+			$(iconPicture).on('click', function() {
+				try {
+					var img = new Image();
+					img.src = imgUrl;
+					var width;
+					var height;
+					if (img.complete) {
+						width = img.width;
+						height = img.height;
+					} else {
+						img.onload = function() {
+							width = img.width;
+							height = img.height;
+						};
+					}
+					var top = 0;
+					var left = 0;
+					var windowWidth = $(window).width();
+					var windowHeight = $(window).height();
+					if (width > windowWidth) {
+						var proportion = windowWidth / width;
+						width = windowWidth;
+						height = height * proportion;
+					} else if (width < windowWidth) {
+						left = (windowWidth - width) / 2;
+					}
+					if (height < windowHeight) {
+						top = (windowHeight - height) / 2;
+					}
+					var html = '';
+					html += '<div class="jumpbox2 displayN preImg panel" id="preImg" style="top:0;background:#000;width:100%;height:100%">';
+					html += '<div style="position:absolute; z-index:999;top:' + top + 'px;left:' + left + 'px;overflow:hidden;">';
+					html += '<img id="preImage" style="vertical-align: middle;margin:0 auto;" alt="" src="' + imgUrl + '" width="' + width + '" height="' + height + '">';
+					html += '</div></div>';
+
+					$('body').append(html);
+					$('#preImg').bind('click', function() {
+						$('#preImg').hide();
+						$('#preImg').unbind('click');
+						$('#preImg').remove();
+					});
+					setTimeout(function() {
+						$('#preImg').show();
+					}, 200);
+				} catch (e) {
+					alert(e.name + '  ' + e.message);
+				}
+			});
+		}
+	};
+	function downImage(data,camera){
+		try {
+			var nHtml = '';
+			var count = data.responseObject.length;
+			var html = '';
+			var base64 = "data:image/jpeg;base64,"+data.responseObject.imgBase64Data;
+			html += '<span class="addPhoto" id="addPhoto" style="height: 71px;">';
+			html += '<img class="smallImage" id="smallImage" alt="" src="'+ base64 +'" uri="" width="100%" height="100%">';
+			html += '</span>';
+			$(".idInfo").prepend(html);
+
+			var imageData = camera.imageData;
+			imageData.push(data);
+			camera.onLoadPhoto("#addPhoto_" + j, base64);//显示大图的点击事件
+			camera._deletePhoto(j);//删除按钮的点击事件	
+		} catch (e) {
+			alert(e.name+'  '+e.message);
+		}
+	}
+	function getBase64Image(img) {
+	    var canvas = document.createElement("canvas");
+	    canvas.width = img.width;
+	    canvas.height = img.height;
+	    var ctx = canvas.getContext("2d");
+	    ctx.drawImage(img, 0, 0, img.width, img.height);
+	    var ext = img.src.substring(img.src.lastIndexOf(".")+1).toLowerCase();
+	    var dataURL = canvas.toDataURL("image/"+ext);
+	    return dataURL;
+	}
+	function getContentTxt(targetSrc,j,camera) {
+		var img = "/SunTRM/servlet/GetImage?"+targetSrc;
+		var image = new Image();
+		image.src = img;
+		image.onload=function(){
+			var base64 =  getBase64Image(image);
+			 var html = '';
+			html += '<span class="addPhoto" id="addPhoto_' + j + '" style="height: 71px;">';
+			html += '<i class="select-no deletePhoto" id="deletePhoto_' + j + '"></i>';
+			html += '<img class="smallImage" id="smallImage_' + j + '" alt="" src="'+ base64 +'" uri="" index=' + j + ' width="100%" height="100%">';
+			html += '</span>';
+			$(".noPicLimit1").prepend(html);
+			var imageData = camera.imageData;
+			camera.onLoadPhoto("#addPhoto_" + j, base64);//显示大图的点击事件
+			camera._deletePhoto(j);//删除按钮的点击事件
+		}
+	}
+	</script>
+	</body>
+</html>

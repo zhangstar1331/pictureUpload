@@ -1,0 +1,228 @@
+/*
+       by="liang"
+       2016-1-18
+*/
+
+.bg_wt{
+    background:#ffffff;
+}
+.margintop{
+    margin-top:1.5em;
+}
+.margin-top{
+    margin-top:1.5em;
+}
+.box1{
+    width:100%;
+    /*padding:1em 0 5% 0;*/
+}
+.btn{
+    height:96px;
+    width:100%
+}
+.first-btn{
+    background:#f5a100;
+}
+.second-btn{
+    background:#6eb92b;
+}
+.third-btn{
+    background:#e83344;
+}
+.circle{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    background:#ffffff;
+    position: relative;
+    top:18px;
+    left:5%;
+    float: left;
+}
+.top{
+    margin-top:.25em;
+}
+.top1{
+    height: 1em;
+}
+.left{
+    width:50%;
+    /*margin:0 auto;*/
+    float: left;
+}
+.right{
+    width:50%;
+    /*margin:0 auto;*/
+    float: left;
+}
+.up{
+    width:100%;
+    padding:1.2em 0 3% 0;
+    margin:0 auto;
+    font-size:1.2em;
+    color:#f5a100;
+    text-align: center;
+}
+.down{
+    width:100%;
+    margin:0 auto;
+    padding:.8em 0 2% 0;
+    font-size:.9em;
+    color:#999999;
+    text-align: center;
+}
+.bottom{
+    width:100%;
+    margin-bottom:7em;
+}
+.img{
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.txt{
+    width:52%;
+    text-align: left;
+    font-size:1.8em;
+    color:#fff;
+    font-family: "Microsoft YaHei";
+    line-height:96px;
+    position: relative;
+    margin-right:10%;
+    float: right;
+}
+.text{
+    text-align: center;
+    padding:0 0 0 8%;
+    margin:auto;
+    margin-top:1em;
+    position: relative;
+    font-size:1em;
+}
+.color1{
+    color:#999999;
+    /*float: left;*/
+}
+.color2{
+    color:#333333;
+    /*float: left;*/
+}
+.color3{
+    color:#005bac;
+    /*float: left;*/
+}
+.txt_left{
+    width: 55% !important;
+}
+.blue{
+    color:#005bac !important;
+}
+.ew{
+    margin: auto;
+    text-align: center;
+}
+.iscroll{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+.btn{
+	margin-right: 5%;
+}
+.allPackage,.cheapPackage{
+	height:8em ;
+	float: left;
+	text-align: center;
+	
+	
+}
+.allPackage  a  div:nth-child(2),.cheapPackage a  div:nth-child(2){
+	width: 60%;
+	float: left;
+	line-height:8em ;
+	
+}
+.allPackage a  div:nth-child(1),.cheapPackage a div:nth-child(1){
+	width: 40%;
+	float: left;
+	height: 100%;
+	color: #FFFFFF;
+	
+}
+.allPackage{
+	background: #7baee8;
+	width: 49%;
+	margin-right: 1%;
+}
+.allPackage div:first-child{
+	background: url(../../../images/cameraQuote/allTpye.png) no-repeat right center;
+	background-size: 40px;
+}
+.cheapPackage div:first-child{
+	background: url(../../../images/cameraQuote/money.png) no-repeat right center;
+	background-size: 40px;
+}
+.cheapPackage{
+	    background: #f4c85f;
+	    width: 49%;
+	margin-left: 1%;
+}
+.womenPackage,.olderPackage,.freePackage{
+	height:6em ;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+}
+.womenPackage{
+	background: #ff5757;
+	width: 31.3%;
+}
+.olderPackage{
+	background: #add37c;
+	width: 32.3%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.freePackage{
+	background: #68d3ac;
+	width: 32.3%;
+}
+.taocanUL li a{ 
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+}
+.womenPackage p:first-child,.olderPackage p:first-child,.freePackage p:first-child{
+	height: 4em;
+	width: 50%;
+	margin: 0 auto;
+	
+}
+.womenPackage p:last-child,.olderPackage p:last-child,.freePackage p:last-child{
+	
+}
+.womenPackage p:first-child{
+	background: url(../../../images/cameraQuote/woman.png) no-repeat  center;
+	background-size: 40px;
+}
+.olderPackage p:first-child{
+	background: url(../../../images/cameraQuote/oldman.png) no-repeat  center;
+	background-size: 40px;
+}
+.freePackage p:first-child{
+	background: url(../../../images/cameraQuote/self.png) no-repeat  center;
+	background-size: 36px;
+}
+.clearfix:before, .clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0;}
+.clearfix:after{ clear: both !important;}
+.right-btn{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: rgb(215,8,15);
+	color: #FFFFFF;
+}

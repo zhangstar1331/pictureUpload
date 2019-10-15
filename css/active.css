@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.margin-right0 {margin-right:0;}
+.margin-left0 {margin-left:0;}
+.margin-top0 {margin-top:0;}
+.margin-bottom0 {margin-bottom:0;}
+
+
+.imgstyle-11em {width:11em;margin:1.4em 0 0 0.6em;}
+.imgstyle-23em {width:23em;margin:0.8em 0 0 1em;}
+.imgstyle-7em {width:6.5em;margin:0.5em 0 0 0.65em;}
+.text-indet { text-indent:2em;}
+
+
+.dazhuanpan {width:290px;height:290px;margin:0 auto; position:relative;background:url(../images/weixin/dzp-bg.png) no-repeat;}
+.zhizhen {width:163px;height:163px;margin:0;left:63px;top:64px;  position:absolute;}
+
+.title-org {background:#ff7200;border-radius:0.5em;border-bottom-left-radius:0;border-bottom-right-radius:0; }

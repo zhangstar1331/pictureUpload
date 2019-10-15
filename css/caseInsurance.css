@@ -1,0 +1,64 @@
+/*
+    by-liang
+    2016-1-19
+*/
+
+.item{
+    height: 3em;
+    line-height: 3em;
+    background: #fff;
+    padding: 0 0.7em;
+    border-bottom: 0.1em solid #d9d9d9;
+}
+.item-noborder{
+    height: 2em;
+    line-height: 2em;
+    background: #fff;
+    margin: 0 0.7em;
+}
+.item-case-333{
+    font-size: 1em;
+    color: #333333;
+    width: 50%;
+    float: left;
+}
+.item-case-gray{
+    font-size: 0.9em;
+    color: #8c8c8c;
+    width: 50%;
+    float: left;
+}
+.color-333{
+    color:#333333;
+    margin:0 !important;
+}
+.bottom{
+    padding-bottom:.6em;
+}
+.bottomborder{
+    border-bottom:1px solid #f7f7f7;
+}
+.marginbottom{
+    height:.6em;
+    background:#ffffff;
+}
+.messages{
+    background:#ffffff;
+}
+.sure{
+    line-height:1.4em;
+    padding:0 .6em;
+    font-size:1em;
+    outline: none;
+    outline-color:transparent;
+    border:none;
+    margin:0 auto;
+    width:94%;
+    height:7em;
+}
+.attention{
+    color:#8c8c8c;
+    font-size:.9em;
+    margin: 0 0.7em;
+    padding:1em 0 1.5em 0;
+}

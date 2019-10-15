@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*保单成功提示*/
+.p0em{ padding:0em;}
+.price-bar .price-fr{ float:right; padding-right:0.7em;}
+
+/*应付金额*/
+.h43em{ height:4.3em; line-height:4.3em;}
+
+/*投保告知书*/
+.text-area3 {height:auto;border-top:0.1em solid #aaa; background:#fff; padding-bottom:1em;color: #666; font-family: Microsoft YaHei, Arial,Helvetica,sans-serif; font-size: 1em;}
+.text-area3 div{padding:0em 0.7em; line-height:1.5em;}
+
+.bb-dashed{ border-bottom:0.1em dashed #999; padding:0em; margin:1em auto; }
+.bb-solid{ border-bottom:0.1em solid #999; padding:0em; margin:1em auto;}
+
+.text-area3 .pt1em{ padding-top:1em;}
+.mb1em{ margin-bottom:1em;}
+
+.text-area3 .accident-re{padding:0em; margin:0.5em auto; width:100%;}
+.accident-re td{height:2em; line-height:2em; text-align:center; background:#f3f3f3; }
+
+.read-select{ width:1.5em; height:1.5em; background:url(../images/icon/icon_Agree_No.png) no-repeat; background-size:80%; vertical-align:middle; display:inline-block;}
+.read-selected{ width:1.5em; height:1.5em; background:url(../images/icon/icon_Agree.png) no-repeat; background-size:80%; vertical-align:middle; display:inline-block;}
+
+
+.siger{ text-align:right;}
+.siger span{ display:inline-block; color:#333;}
+.siger-input{ width:5em; height:1em; border-bottom:0.1em solid #333; cursor:pointer;}
+
+/*弹出手写签名*/
+.qianming {height:4.5em;padding:0.5em 0.7em; border-top:0.1em solid #aaa;background:#fff;}
+.siger-show{width:100%;position:absolute;z-index:99999;bottom:0em;height:auto;margin-left:-5px;margin-right:0px;}
+.siger-con{width:100%;position:absolute;z-index:100000;bottom:0em;height:auto;background:#ffffff;box-shadow:0 0 10px #ccc;}
+.siger-text{ width:100%; height:15em; background:#ffffff; }
+
+

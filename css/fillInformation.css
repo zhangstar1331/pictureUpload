@@ -1,0 +1,6 @@
+@media screen and (max-width:320px){
+.div-area2{margin-top: 50%;background: #fff;}
+}
+@media screen and (min-width:321px){
+.div-area2{margin-top: 65%;background: #fff;}
+}

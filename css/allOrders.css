@@ -1,0 +1,476 @@
+
+body, html, div, a, span, button, input, select, textarea {
+    font-family: Microsoft YaHei, Arial,Helvetica,sans-serif;
+}
+.clearfix:after{ content:""; clear:both:display:block}
+.clearfix{zoom:1;}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.db{
+	display: block;
+}
+.dno{
+	display: none;
+}
+.searchAreaCon {
+    height: 3em;
+    padding: 0.5em 0.5em;
+}
+.searchAreaCon .search-button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    margin: 0.4em 0;
+    background: url(../../../images/cameraQuote/new_icon/seo.png)no-repeat center;
+    background-size: 100%;
+}
+.searchAreaCon input[type="text"] {
+    width: 70%;
+    height: 2.5em;
+    border: 0;
+    border-radius: 5px;
+    line-height: normal;
+    outline: none;
+    padding: 0.5em;
+    overflow: hidden;
+    color: #4b4b4b;
+    font-size: 0.8em;
+    font-family: "microsoft yahei";
+    padding-left: 2.4em;
+}
+.right{
+    padding: 0.5em;
+    font-size: 1em;
+    line-height:32px;
+}
+.blue{
+    color:#006ba5 !important;
+}
+.orderdate{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #ffffff !important;
+    position: relative;
+}
+.orderdate-2{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background: #ffffff !important;
+    position: relative;
+}
+.width-25{
+    width:24.8%;
+    border-right:1px solid #d9d9d9;
+    background: #ffffff !important;
+    padding:1% 0 5%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.width-25-2{
+	box-sizing:border-box;
+    width:25%;
+    border-right:1px solid #f1f1f1;
+    background: #ffffff !important;
+    padding:1% 0 2%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.tabMain .information .divLeft{width: 55%;}
+
+/*.width-25-2 div:first-child{
+	padding:1.2em 0;
+	margin-top: -1.2em;
+}
+.width-fin div:first-child{
+	padding:1.2em 0;
+	margin-top: -1em;
+}
+.width-25-2 div:last-child{
+	margin-top: -1.2em;
+}
+.width-fin div:last-child{
+	margin-top: -1.2em;
+}*/
+.width-fin{
+   box-sizing:border-box;
+    width:25%;
+    padding:1% 0 5%;
+    position: relative;
+    float: left;
+    text-align: center;
+    background: #ffffff !important;
+}
+.font-1{
+    font-size:1.2em;
+    color:#f5a100;
+    text-align: center;
+}
+.font-1-2{
+    font-size:.9em;
+    color:#f5a100;
+    text-align: center;
+}
+.font-1-1{
+    font-size:.9em;
+    color:#000;
+    text-align: center;
+}
+.font-2{
+    font-size:.9em;
+    color:#333333;
+    text-align: center;
+    margin:3%;
+}
+.font-2-2{
+    font-size:.9em;
+    color:#333333;
+    text-align: center;
+    margin:3%;
+}
+.backgroundColor{
+    padding: 0 1em;
+    /*margin-top: 4.5em;*/
+    font-size: 1em;
+    color: #000;
+    line-height: 2em;
+    background-color: #fff;
+    display: block;
+}
+.backgroundColor1{
+    padding: 0 0.8em;
+    /*margin-top: 4.5em;*/
+    font-size: 1em;
+    color: #000;
+    line-height: 2em;
+    /*background-color: #fff;*/
+    display: block;
+}
+.backgroundColor2{
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: #000;
+    line-height: 2em;
+    background-color: #fff;
+}
+.backgroundColor3{
+    padding: 0 0.8em;
+    /*margin-top: 4.5em;*/
+    font-size: 0.9em;
+    color: #000;
+    line-height: 1.6em;
+    /*background-color: #fff;*/
+    display: block;
+}
+.d_left{
+    width:70%;
+    /*float: left;*/
+    font-size: .8em;
+    text-align: left;
+}
+.d_right{
+    width:25%;
+    float: right;
+    font-size: .8em;
+    text-align: right;
+}
+.b_left{
+    width:100%;
+    font-size:.8em;
+    text-align: left;
+}
+.b_center{
+    width:100%;
+    font-size:.8em;
+    text-align: left;
+}
+.b_right{
+    width:100%;
+    font-size:.8em;
+    text-align: left;
+}
+.b_left-2{
+    width:100%;
+    text-align: left;
+}
+.b_center-2{
+    width:100%;
+    text-align: left;
+}
+.b_right-2{
+    width:100%;
+    text-align: left;
+}
+.top-15{
+    margin-top:1.5em!important;
+}
+.div_left{
+    width:20%;
+    float: left;
+    position: relative;
+}
+.div_left2{
+    width:30%;
+    float: left;
+    position: relative;
+}
+.div_center{
+    width:35%;
+    float: left;
+    position: relative;
+}
+.div_center2{
+    width:25%;
+    float: left;
+    position: relative;
+}
+.div_right{
+    width:45%;
+    float:right;
+    position: relative;
+}
+.div_right2{
+    width:45%;
+    float:right;
+    position: relative;
+}
+.paizhao{
+    width:85%;
+    height:2em;
+    border-radius:4px;
+    border:1px solid #d9d9d9;
+    position: relative;
+    margin-top:1.8em;
+    background:#005BAC;
+}
+.img-card{
+    width:100%;
+    margin:auto;
+}
+.color-gray{
+    color:#a9a9a9;
+}
+.right1{
+    width:8% !important;
+}
+.color-333{
+    color:#333333;
+}
+.type{
+    padding:5% 0;
+    width:100%;
+    background:#ffffff;
+    font-size:.9em;
+    font-family: "microsoft yahei";
+}
+.attention{
+    width:100%;
+    background:#ffffff;
+    font-size:.8em;
+    padding:2% 0;
+    font-family: "microsoft yahei";
+}
+.border-top{
+    border-top:1px solid #f7f7f7;
+}
+.type{
+    width:100%;
+    text-align: right;
+    position: relative;
+}
+.type-more{
+    width:20%;
+    right:2%;
+    font-size:.9em;
+    text-align: center;
+    position: relative;
+}
+.type-connect{
+    width:30%;
+    font-size:.9em;
+    border-radius:10%;
+    border:1px solid #f6a20c;padding:1% .5em;
+    text-align: center;
+    position: relative;
+    color:#f6a20c;
+}
+.fontweight{
+    font-weight:600;
+}
+.red{
+    color:#ffffff;
+    padding:.1em .3em .15em;
+    border-radius:3px;
+    background:#e83344;
+}
+.search-input {
+    height: 30px;
+    background: #FFFFFF;
+    position: relative;
+    margin-left: 3%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+.search-input input {
+    background: #FFFFFF;
+    font-family: "寰蒋闆呴粦";
+    width: 75%;
+    font-size: .8em;
+    border: none;
+    margin-left: 26px;
+    margin-top: 5px;
+}
+.search-input i {
+    position: absolute;
+    left: 8px;
+    top:4px;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background: url(../../../images/icon-search.png) no-repeat left center;
+    background-size: 70% 70%;
+}
+.searchBox {
+    background: #f6f6f6;
+    width: 100%;
+    padding: 0.5em 0;
+    z-index: 100;
+    height: 2.2em;
+}
+#searchNameOrNo{
+    outline-color:transparent;
+}
+
+/* 绛涢�� */
+.filterBox{
+	position: relative;
+	width: 100%;
+}
+.filterBox .filterHead{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	border-bottom: 1px solid #ebebeb;
+}
+.filterBox .filterHead li{
+	float: left;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;;
+	text-align: center;
+	color: #908f8f;
+}
+.filterBox .filterHead li span.open{
+	padding-right: 30px;
+	background: url(../../../images/icon-open.png) no-repeat right center;
+	background-size: 1.1em;
+}
+.filterBox .filterHead li span.close{
+	padding-right: 30px;
+	background: url(../../../images/icon-close.png) no-repeat right center;
+	background-size: 1.1em;
+}
+/*浠诲姟绫诲瀷*/
+.filterBox  .filterContentType{
+    position: absolute;
+    left: 0;
+    top: 41px;
+	width: 100%;
+    background: #fff;
+}
+
+.filterContentType  .filterContLeft{
+	width: 50%;
+	background: #f8f8f8;
+}
+.filterContentType  .filterContRight{
+	width: 50%;
+	background: #ebebeb;
+}
+.filterBox  .filterContentType li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.filterContentType .active1{
+	color: #d7000f;
+	background: #ebebeb;
+}
+.filterContentType .active2{
+	color: #d7000f;
+	background: #d9d9d9;
+}
+/*鎻愪氦鏃ユ湡*/
+.filterBox .filterContentDate{
+	position: absolute;
+	left: 0;
+	top: 41px;
+	width: 100%;
+	padding: 20px 0;
+	background: #fff;
+	
+}
+.filterContentDate .DataBox{
+	position: relative;
+	width: 90%;
+	height: 32px;
+	padding: 0 5%;
+}
+.DataBox span{
+	position: absoulte;
+	left: 50%;
+	transform: translate(50%,0);
+	display: inline-block;
+	width: 10%;
+	height: 30px;
+	text-align: center;
+}
+.DataBox input{
+	margin:auto;
+	display: inline-block;
+	width: 40%;
+	height: 30px;
+	border: 1px solid #ebebed;
+	border-radius: 5px;
+}
+.DataBox em{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background: #ebebed;
+}
+.filterContentDate .dateSearch{
+	background: #d7000f;
+	border: 1px solid #ebebed;
+    margin: 15px 10%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+}
+.layer1{
+	position: absolute;
+	left: 0;
+	top: 41px;
+	width: 100%;
+	height: 10000px;
+	background: rgba(0,0,0,0.5);
+}

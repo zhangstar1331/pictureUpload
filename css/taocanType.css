@@ -1,0 +1,46 @@
+.renewal_table tr .itemName{padding-left:0.5em; font-size:1em; color:#4b4b4b;padding-top: 0.15em;}
+.renewal_table tr .adjustItems{padding-right:0.5em;font-size:1em; text-align: right;padding-top: 0.15em;}
+.table-arrow-down-orange {background: url(../../../images/arrow-down-orange.png) no-repeat center;width: 0.8em;height: 0.8em;background-size: 0.7em;float: right;padding: 5px;}
+.item-case-name {font-size: 1em;color: #8c8c8c;width: 50%;float: left;}
+.item-name {font-size: 1em;color: #8c8c8c;width: 60%;float: left;}
+.greenPic{max-width:75%;padding-left: 0.3em;position: relative; top: 6px;}
+.font-black{color:#333333;}
+.font-white{color:white;}
+.font-09em{font-size: 0.9em}
+.renewal_table tr{vertical-align:top;line-height: 1.8em}
+.input-style{width:6em;}
+#newEQTable tr{
+	line-height: 3em;
+}
+.tra2 {
+    outline: none;
+    outline-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.55em 3% 0.25em 3%;
+    font-size: 1em;
+}
+.ul-li-span-right input {
+    text-align: right;
+    border: none;
+    margin-right: 15px;
+    color: #333;
+    font-size: 1em;
+    outline-color: transparent;
+}
+.font1em {
+    font-size: 1em;
+    font-family: "Microsoft YaHei";
+     color: #666666; 
+}
+.icon-substra1 {
+    display: inline-block;
+    background: url(../../../images/icon-subtration.png) no-repeat center;
+    width: 1.3em;
+    height: 1.3em;
+    background-size: 1.2em;
+}
+.item-noborder .floatright {
+	text-align: right;
+}

@@ -1,0 +1,26 @@
+.left{
+    padding:10% 0 3% .5em;
+    background:#ffffff;
+}
+.bg_red{
+    background:#e83344;
+}
+.foot_left{
+    width:49%;
+    height:inherit;
+    float:left;
+    border-right:1px solid #ffffff;
+    font-size: 1em;
+    color:#ffffff;
+    text-align: center;
+    line-height: 2.8em;
+}
+.foot_right{
+    width:50%;
+    height:inherit;
+    float:right;
+    font-size: 1em;
+    color:#ffffff;
+    text-align: center;
+    line-height: 2.8em;
+}

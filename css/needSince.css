@@ -1,0 +1,40 @@
+.div_renewal_btn {
+	padding: 2em 0;
+	text-align: center;
+}
+
+.renewal_btn_div {
+	margin: 0 5%;
+	width: 90%;
+	height: 2.5em;
+	line-height: 2.4em;
+	font-size: 1em;
+	border-radius: 5px;
+	background: #e83344;
+	text-align: center;
+	color: #FFF;
+}
+.renewal_btn_div a {
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+.item-ul-box ul li{
+	background: none;
+	border-top:none;
+	border-bottom: 1px solid #f7f7f7;
+	color:#8c8c8c;
+}
+.item-ul-box ul li:last-child{
+	border-bottom:none;
+}
+.detailInfo{
+	color:#575757;
+	font-size: 1em;
+}
+.item-ul-box ul li span a{
+	color:#005bac;
+}
+.listContent{
+	color:#A5A5A5;
+	font-size: 0.9em;
+}

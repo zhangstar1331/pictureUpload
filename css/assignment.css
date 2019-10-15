@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg-f3{ background:#f3f3f3;}
+.bg-f{ background:#ffffff;}
+.car-ID-box {width:6em;height:2.5em;background:#005bac; border-radius:0.3em;float:left;margin-right:0.5em;}
+.car-ID-box2 {width:5.4em;height:1.9em;background:#005bac; border-radius:0.3em;float:left;border:solid 0.1em #fff;margin:0.2em 0 0 0.2em; text-align:center; line-height:1.9;}
+
+
+/* font */
+.font083em{ font-size:0.83em;font-family:"Microsoft YaHei";color:#666666;}
+.font13em{ font-size:1.33em;font-family:"Microsoft YaHei";color:#666666;}
+.no-spacing{ letter-spacing:normal;}
+
+/* margin/padding */
+.mr1em{ margin-right:1em;}
+.mt125em{ margin-top:1.25em;}
+
+.p05em{ padding:0.5em;}
+.p05em2em{ padding:0.5em 0.5em 0.5em 2em;}
+.p025em0em{ padding:0.25em 0em;}
+.p3em0em{ padding:3em 0em;}
+.pl2em{ padding-left:2em;}
+.p02em{ padding:0.2em;}
+
+/* line-height */
+.lh12em{ line-height:1.2em;}
+.lh15em{ line-height:1.5em;}
+.lh18em{ line-height:1.8em;}
+
+/* border */
+.bt-bb-01em{ border-top:0.1em solid #cacaca; border-bottom:0.1em solid #cacaca;}
+
+/* btn */
+.btn-add {width:2.5em;height:3.3em;background:url(../images/btn-add.png) no-repeat; background-size:70%;margin-right:1em; background-position:right ;}
+.btn-nav-se{ width:0.94em; height:0.53em; background:url(../images/btn-arrow-down-white.png) no-repeat; background-size:70%; display:inline-block;}
+
+.btn-tit-arrow-down{ width:0.94em; height:3.3em; background:url(../images/btn-arrow-down-blue.png) no-repeat; background-size:100%; background-position:center; display:inline-block; margin-right:1.5em; }
+.btn-tit-arrow-right{ width:0.53em; height:3.3em; background:url(../images/btn-arrow-right-blue.png) no-repeat; background-size:100%; background-position:center; display:inline-block; margin-right:1.5em; }
+
+.btn-list-arrow-right{ width:0.53em; height:2.3em; background:url(../images/btn-arrow-right-gray.png) no-repeat; background-size:100%; background-position:center; display:inline-block;}
+
+/* icon */
+.icon-like{ width:1.44em; height:1.22em; background:url(../images/icon/icon-like.png) no-repeat; background-size:100%; }
+.tit-icon{ width:0.61em; height:0.91em; background:url(../images/icon/icon-nail.png) no-repeat; background-size:100%; display:inline-block; margin-left:0.5em; margin-right:0.39em;}
+
+.icon-smile{ width:0.86em; height:0.86em; background:url(../images/icon/icon-smile.png) no-repeat; background-size:100%; display:inline-block; margin-right:0.3em;}
+.icon-rmb{ width:0.86em; height:0.86em; background:url(../images/icon/icon-rmb.png) no-repeat; background-size:100%; display:inline-block; margin-right:0.3em;}
+.icon-hourglass{ width:0.7em; height:0.86em; background:url(../images/icon/icon-hourglass.png) no-repeat; background-size:100%; display:inline-block; margin-right:0.3em;}
+.icon-car {width:12%;height:2em;background:url(../images/icon/icon-car.png) no-repeat; background-position:center;background-size:78%;float:left;margin-right:0.5em;}
+
+/* table */
+.insurance-list {background:#f3f3f3;width:100%; box-shadow:inset 0 0.1em 0.2em #999;border:none; border-collapse:collapse;}
+.insurance-list tr th { text-align:right;padding:0.5em ;font-size:1em;font-family:"Microsoft YaHei";color:#666666; font-weight:bold;border-bottom:0.1em solid #999;}
+.insurance-list tr td {font-size:1em;padding:0.5em; border-bottom:0.1em solid #999;}
+
+/* 我的任务菜单弹出 */
+.my-menu-show{width:100%;position:absolute;z-index:99999;height:100%;margin-left:-5px;margin-right:0px;}
+.my-menu-con{width:100%;position:absolute;z-index:100000;top:3.0em;height:auto;background:#ffffff;box-shadow:0 0 10px #ccc; border-bottom:0.1em solid #009ddc; border-top:0.1em solid #009ddc;}
+.my-menu-con li{ color:#999; font-size:0.83em; text-align:center; line-height:2.2em; border-bottom:0.1em solid #ccc;}
+
+

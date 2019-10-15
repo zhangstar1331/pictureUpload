@@ -1,0 +1,227 @@
+
+.myTaskUlBox{
+	height: 47px;
+	background: white;
+	z-index:100;
+	width: 100%;
+}
+.myTaskUlBox ul li{
+	float: left;
+	width:50%;
+/*	width:100%;*/
+	text-align: center;
+	padding:.8em 0;
+}
+.arrow-down-orange2{
+	background: url(../../../images/arrow-down-orange.png) no-repeat right center;
+	width: 0.8em;
+	height: 0.8em;
+	background-size: 0.7em;
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 6px;
+}
+.backgroundColor2-sec{
+	border-bottom:0.2em #fff solid;
+	
+}
+.backgroundColor3-sec{
+    padding: 0 0.8em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    color: #000;
+    line-height: 1.6em;
+    background-color: #fff;
+    display: block;
+}
+.floatleft_icons-sec{
+	background: url(../../../images/cameraQuote/1cxfw-arrow.png) no-repeat center;
+	background-size: 15px;
+}
+.item-ul-box{
+	padding:0;
+	margin-top: 0;
+}
+.item-ul-box li{
+	padding:.8em 4%;
+	color:#575757;
+	background-position-x: 96%;
+}
+.clickmore{
+	background-image: none !important;
+	background-color: rgb(246, 246, 246) !important;
+	text-align: center;
+}
+/* 新增 2017.3.9 */
+.tabBox{
+	height:44px;
+	background: white;
+}
+.tabBox a{
+	color:black;
+	text-align: center;
+	float:left;
+	height: 42px;
+	display: inline-block;
+	width: 50%;
+	text-decoration: none;
+	line-height: 42px;
+}
+.tabBox2{
+	height:44px;
+	background: white;
+}
+.tabBox2 a{
+	color:black;
+	text-align: center;
+	float:left;
+	height: 42px;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	line-height: 42px;
+}
+.active{
+	color:#d7000f !important;
+	border-bottom:2px solid #d7000f;
+}
+.search-input {
+    width: 83%;
+    float: left;
+}
+.search-input input {
+	outline-color:transparent;
+}
+.search-sort{
+	float: left;
+    margin-left: 5px;
+}
+.drop_bottom{
+    width: 100%;
+    margin-top: 40px;
+    background: #e8e8e8;
+    position: absolute;
+    z-index: 9;
+    display: none;
+    height: calc(100% - 147px);	
+}
+.drop_bottom h3{
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+.sortType{
+	width: 100%;
+	box-sizing:border-box;
+	padding: 10px 5%;
+	color: #303030;
+    border-bottom: 1px solid #cfcaca;
+    overflow: hidden;
+    background: #fff;
+
+}
+.sortType label{
+    margin-right: 12px;
+    text-align: right;
+    line-height: 26px;
+}
+.sortType span{
+    display: inline-block;
+    width: 29%;
+    border: 1px solid #cfcaca;
+    border-radius: 5px;
+    margin-right: 3%;
+    text-align: center;
+    line-height: 26px;
+}
+.sortType .current{
+	background: #e8e8e8;
+}
+.sortState p, .sortState span{
+    margin-bottom: 7px;
+}
+.sortBtn{
+	width: 88%;
+    padding: 3px 0 3px 12%;
+}
+.sortBtn div{
+	background: rgb(215, 0, 15);
+    height: 30px;
+    width: 35%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5%;
+}
+.reset{
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background: url(../../../images/reset-icon.png) no-repeat 2px 1px;
+	background-size:  20px;
+	border-radius: 25px;
+	right: 7px;
+	top: 2px;
+	border-color:transparent;
+    outline-color:transparent;
+}
+.mainInner{
+	height: calc(100% - 98px);
+    width: 100%;
+    background: #f6f6f6;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.information{
+	width: 100%;
+	height: calc(100% - 52px);
+	border: 1px solid #f6f6f6;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	box-sizing:border-box;
+}
+.information li{
+	box-sizing:border-box;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 3%;
+	background: #fff;
+    overflow: hidden;
+}
+.information li a{
+	color: #000;
+    overflow: hidden;
+    display: block;
+}
+.information .divLeft{
+	width: 60%;
+	float: left;
+}
+.information .divLeft span{
+    font-size: 14px;
+    color: #d7000f;
+    margin-right: 20px;
+}
+.information .divLeft label{
+    font-size: 16px;
+}
+.information .divLeft p{
+    font-size: 14px;
+    color: #9e9898;
+    margin-top: 5px;
+}
+.information .divRight{
+	width: 40%;
+	float: right;
+	background: url(../../../images/icon-jiantou.png) no-repeat right center;
+	background-size: 13% auto;
+	text-align: right;
+	box-sizing:border-box;
+	padding-right: 22px;
+}
+.information .divRight p{
+    font-size: 14px;
+    color: #d7000f;
+    margin-top: 5px;
+}

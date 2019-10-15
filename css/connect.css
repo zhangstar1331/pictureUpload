@@ -1,0 +1,132 @@
+/*
+    by-liang
+    2016-1-19
+*/
+
+.foot{
+    outline: none;
+    outline-color: transparent;
+    background:#ffffff;
+    width:60%;
+    padding:2% .5em;
+    font-size:.9em;
+    margin-left:3%!important;
+    border-radius:10px;
+    position: relative;
+    border:1px solid #d9d9d9;
+    top:10%;
+    float: left;
+}
+.left{
+    text-align: left !important;
+    padding:1% 0;
+}
+.laugh{
+    float: right;
+    position: relative;
+    right:5%;
+}
+.add{
+    float: right;
+    position: relative;
+    right:3%;
+}
+.contact{
+    width:100%;
+    margin:5% auto;
+    text-align: center;
+    position: relative;
+}
+.color-bc{
+    background:#bcbcbc;
+}
+.t_center{
+    width:15%;
+    border-radius:6px;
+    padding:2% 3%;
+    color:#ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+.output{
+    width:100%;
+
+}
+.talk{
+    float: left;
+    position: relative;
+    left:3%;
+    background:#ffffff;
+    width:65%;
+    height:auto;
+    padding:.7em .4em 1em .4em;
+    top: 1.5em;
+    border-radius:6px;
+    text-align: left;
+    font-size: .9em;
+    line-height:1.6em;;
+}
+.circle{
+    width:3.6em;
+    height:3.6em;
+    border-radius:3.6em;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 2em;
+    left:3%;
+    float: left;
+}
+.img{
+    width:2.8em;
+    position: relative;
+    top: .4em;
+}
+.sanjiao{
+    width:17px;
+    height:23px;
+    position: relative;
+    float: left;
+    top:2.5em;
+    left:3%;
+    background:url(../../resources/images/tanhuazuo.png)no-repeat 100% 10%;
+    background-size:70%;
+}
+.center{
+    text-align: center;
+    padding-left:3%;
+}
+.left{
+    text-align: left;
+    font-size: .8em;
+    color:#8c8c8c;
+}
+.right{
+    float: right;
+    text-align: right;
+    font-size: .8em;
+    color:#333333;
+    right:2%;
+    position: relative;
+}
+.baojia{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+.gray{
+    color:#8c8c8c;
+    font-size: .8em;
+    padding-bottom:1em;
+    border-bottom:1px solid #f7f7f7;
+}
+.height{
+    padding-bottom:22em;
+}
+.blue{
+    color:#006ab5!important;
+    padding-top:1em;
+}
+.color-333{
+    color:#333333;
+}

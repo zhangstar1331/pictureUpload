@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#f5f5f5;
+}
+
+/*header*/
+header{
+	height:3.3em;
+	line-height:3.3em;
+	background:#005bac;
+}
+header .back{
+	float:left;
+	width: 10%;
+	height: 3.3em;
+	background: url(../images/btn-back.png) no-repeat;
+	background-size:1em;
+	position:absolute;
+	left:5%;
+	background-position: left;
+	top:0;
+}
+header .title{
+	width:70%;
+	font-size:1.125em;
+	color:#fff;
+	text-align:center;
+	margin:0 auto;
+}
+.container{
+	width:100%;
+	margin-top:3.3em;
+	overflow:hidden
+}
+.scan{
+	padding:1em 0;
+	position:relative;
+	overflow:hidden;
+	border-bottom:1px solid #d5d5d5;
+	margin:0 3%;
+}
+.scan_btn{
+	width:40px;
+	height:30px;
+	display:inline-block;
+	background:url(../images/btn-scan.png) no-repeat center;
+	position:absolute;
+	right:0;
+	top:16px;
+}
+.scan_msg{
+	margin-right:42px;
+	float:left;
+	text-align:left;
+	line-height:30px;
+}
+
+/*牌照icon*/
+.icon_carnumber{
+	float: left;
+	width: 33px;
+	height: 32px;
+	margin-left: 0.3em;
+	background: url(../images/icon/icon_carnumber.png) no-repeat;
+	background-size: 100%;
+}
+.icon_carnumber_gray{
+	background: url(../images/icon/icon_carnumber_gray.png) no-repeat;
+	background-size: 100%;	
+}
+.icon_car_number{
+	float: left;
+	width: 33px;
+	height: 32px;
+	background: url(../images/icon/icon-number-choose.png) no-repeat;
+	background-size: 100%;
+	margin:0;
+}
+.icon_car_number_gray{
+	background: url(../images/icon/icon-number-choose-gray.png) no-repeat;
+	background-size: 100%;
+}
+.items_txt{
+	float:left;
+	width:40px;
+	height:32px;
+	line-height:32px;
+	color:#c4c3c3;
+	text-align:center;
+}
+.items_txt input{
+	width:auto;
+	max-width:135px;	
+}
